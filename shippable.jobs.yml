@@ -18,6 +18,5 @@ jobs:
         pull: false
         versionName: latest
     always:
-      - script: echo "always"
       - NOTIFY: notification-slack
-      - script: pwd
+      
