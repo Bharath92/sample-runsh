@@ -11,4 +11,11 @@ resources:
     pointer:
       recipients:
         - "#test_interns"
+  - name: dv-image
+    type: image
+    integration: image
+    pointer:
+      sourceName: "library/nginx"
+    seed:
+      versionName: latest
   
