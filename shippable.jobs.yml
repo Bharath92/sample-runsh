@@ -11,3 +11,11 @@ jobs:
       - NOTIFY: notification-slack
     always:
       - script: echo "always"
+  - name: dv-man-versionName
+    type: manifest
+    steps:
+      - IN: dv-image
+        pull: false
+        versionName: latest
+    always:
+      script: echo "always"
