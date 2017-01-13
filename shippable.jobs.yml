@@ -18,4 +18,5 @@ jobs:
         pull: false
         versionName: latest
     always:
-      script: echo "always"
+      - script: echo "always"
+      
