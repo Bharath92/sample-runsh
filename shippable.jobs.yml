@@ -9,3 +9,5 @@ jobs:
         - script: echo "ran ls 1234"
     on_success:
       - NOTIFY: notification-slack
+    always:
+      - script: echo "always"
