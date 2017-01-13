@@ -19,4 +19,5 @@ jobs:
         versionName: latest
     always:
       - NOTIFY: notification-slack
+      - script: pwd
       
