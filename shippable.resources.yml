@@ -18,4 +18,10 @@ resources:
       sourceName: "library/nginx"
     seed:
       versionName: latest
+  - name: email
+    type: notification
+    pointer:
+      method: email
+      recipients:
+        -  "1992bharath@gmail.com"
   
