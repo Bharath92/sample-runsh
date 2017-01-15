@@ -11,6 +11,8 @@ jobs:
       - NOTIFY: notification-slack
     always:
       - script: echo "always"
+      - NOTIFY: notification-slack
+      - script: echo "lol"
   - name: dv-man-versionName
     type: manifest
     steps:
