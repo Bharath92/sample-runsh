@@ -13,6 +13,7 @@ jobs:
       - script: echo "always"
       - NOTIFY: notification-slack
       - script: echo "lol"
+      - NOTIFY: email
   - name: dv-man-versionName
     type: manifest
     steps:
