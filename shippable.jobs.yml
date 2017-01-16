@@ -27,6 +27,7 @@ jobs:
     steps:
       - IN: sample-script-3
       - IN: trigger-1
+      - IN: dv-image
       - TASK:
         - script: pwd
         - script: echo "ran ls 1234"
