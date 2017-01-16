@@ -15,7 +15,7 @@ resources:
     type: image
     integration: image
     pointer:
-      sourceName: "library/nginx"
+      #sourceName: "library/nginx"
     seed:
       versionName: latest
   - name: email
