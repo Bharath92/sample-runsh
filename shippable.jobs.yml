@@ -17,9 +17,9 @@ jobs:
   - name: dv-man-versionName
     type: manifest
     steps:
-      - IN: dv-image
-        pull: false
-        versionName: latest
+      #- IN: dv-image
+      #  pull: false
+      #  versionName: latest
     always:
       - NOTIFY: notification-slack
   - name: script-2
