@@ -2,12 +2,13 @@ jobs:
   - name: script-1
     type: runSh
     steps:
-      - IN: sample-script-3
       - IN: trigger-1
       - TASK:
         - script: ls
         - script: echo "ran ls 1234"
     on_success:
+      - NOTIFY: notification-slack
+    on_failure:
       - NOTIFY: notification-slack
     always:
       - script: echo "always"
