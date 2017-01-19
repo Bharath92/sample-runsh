@@ -4,7 +4,7 @@ resources:
     integration: github
     pointer:
       sourceName: Bharath92/sample-script
-      branch: test
+      branch: master
   - name: notification-slack
     type: notification
     integration: slack
