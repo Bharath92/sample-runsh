@@ -27,7 +27,7 @@ jobs:
   - name: script-2
     type: runSh
     steps:
-      - IN: sample-script-3
+      - IN: dv-man-versionName
       - IN: trigger-1
       - IN: dv-image
       - TASK:
