@@ -18,7 +18,7 @@ jobs:
         pull: false
         versionName: latest
     always:
-      - NOTIFY: email
+      - NOTIFY: notification-slack
   - name: script-2
     type: runSh
     steps:
