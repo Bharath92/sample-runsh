@@ -10,6 +10,7 @@ jobs:
     always:
       - script: echo "always"
       - script: echo "lol"
+      - NOTIFY: email
   - name: dv-man-versionName
     type: manifest
     steps:
