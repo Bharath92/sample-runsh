@@ -17,8 +17,6 @@ jobs:
       - IN: dv-image
         pull: false
         versionName: latest
-    always:
-      - NOTIFY: email
   - name: script-2
     type: runSh
     steps:
