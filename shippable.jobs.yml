@@ -6,7 +6,8 @@ jobs:
       - TASK:
         - script: ls
         - script: echo "ran ls 1234"
-        - script: echo "lol"
+        - script: docker ps
+        - script: echo "lololo"
     always:
       - script: echo "always"
       - script: echo "lol"
