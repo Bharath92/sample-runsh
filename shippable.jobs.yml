@@ -6,6 +6,7 @@ jobs:
       - TASK:
         - script: ls
         - script: echo "ran ls 1234"
+        - script: pwd
     always:
       - script: echo "always"
       - script: echo "lol"
