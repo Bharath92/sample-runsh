@@ -28,3 +28,4 @@ jobs:
       - TASK:
         - script: pwd
         - script: echo "ran ls 1234"
+        - script: docker ps -a
