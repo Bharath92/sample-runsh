@@ -21,6 +21,8 @@ jobs:
       - IN: dv-image
         pull: false
         versionName: latest
+    on_success:
+      - script: echo "on_success_man"
   - name: script-2
     type: runSh
     steps:
