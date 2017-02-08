@@ -24,4 +24,8 @@ resources:
       method: email
       recipients:
         -  "1992bharath@gmail.com"
+  - name: nightly-trigger
+    type: time
+    seed:
+      interval: "*/1 * * * *"        
   
