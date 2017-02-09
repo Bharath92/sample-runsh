@@ -6,7 +6,7 @@ jobs:
       - IN: myParams
       - IN: dv-image
       - TASK:
-        - scirpt: printenv
+        - scirpt: echo $DVIMAGE_INTEGRATION_USERNAME
         - script: echo $key1
         - scirpt: echo $key2
         - script: ls
