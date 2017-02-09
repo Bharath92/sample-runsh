@@ -6,12 +6,12 @@ jobs:
       - IN: myParams
       - IN: dv-image
       - TASK:
+        - script: echo "test"
         - scirpt: echo $DVIMAGE_INTEGRATION_USERNAME
         - script: echo $key1
         - scirpt: echo $key2
         - script: ls
         - script: echo "ran ls 12345"
-        - script: docker ps -a
         - script: echo "lololo"
     on_success:
       - script: echo "on_success"
