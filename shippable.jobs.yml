@@ -3,7 +3,10 @@ jobs:
     type: runSh
     steps:
       - IN: trigger-1
+      - IN: myParams
       - TASK:
+        - script: echo $key1
+        - scirpt: echo $key2
         - script: ls
         - script: echo "ran ls 12345"
         - script: docker ps -a
