@@ -4,7 +4,7 @@ jobs:
     steps:
       - IN: trigger-1
       - IN: myParams
-      - IN: docker
+      - IN: dv-image
       - TASK:
         - scirpt: printenv
         - script: echo $key1
