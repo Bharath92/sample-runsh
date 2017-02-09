@@ -6,9 +6,7 @@ jobs:
       - IN: myParams
       - IN: dv-image
       - TASK:
-        - script: echo "test"
-        - script: echo $key1
-        - scirpt: echo $key2
+        - script: printenv
         - script: echo "ran ls 12345"
         - script: echo "lololo"
     on_success:
