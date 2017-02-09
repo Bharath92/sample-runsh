@@ -4,7 +4,9 @@ jobs:
     steps:
       - IN: trigger-1
       - IN: myParams
+      - IN: docker
       - TASK:
+        - scirpt: printenv
         - script: echo $key1
         - scirpt: echo $key2
         - script: ls
