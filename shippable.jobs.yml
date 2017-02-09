@@ -29,8 +29,10 @@ jobs:
       - IN: dv-man-versionName
       - IN: trigger-1
       - IN: dv-image
+      - IN: sample-script-3
       - TASK:
         - script: pwd
+        - scirpt: ./IN/sample-script-3/gitRepo/echo.sh
         - script: echo "ran ls 1234"
         - script: docker ps -a
         - script: exit 1
