@@ -5,7 +5,7 @@ jobs:
       - IN: trigger-1
       - TASK:
         - script: ls
-        - script: echo "ran ls 1234"
+        - script: echo "ran ls 12345"
         - script: docker ps -a
         - script: echo "lololo"
     on_success:
