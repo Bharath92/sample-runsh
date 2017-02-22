@@ -30,4 +30,8 @@ resources:
       params:
         key1: "my(branch)name"    
         key2: "test!@#$%^&*"
+  - name: nightly-trigger
+    type: time
+    seed:
+      interval: "*/1 * * * *"
         
