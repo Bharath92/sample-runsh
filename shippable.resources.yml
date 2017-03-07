@@ -5,6 +5,7 @@ resources:
     pointer:
       sourceName: Bharath92/sample-script
       branch: master
+      buildOnCommit: true
   - name: notification-slack
     type: notification
     integration: slack
