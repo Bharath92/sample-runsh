@@ -25,7 +25,7 @@ jobs:
         versionName: latest
     on_success:
       - script: echo "on_success_man"
-  - name: script-2
+  - name: split-branch-hippo-cms-runSh
     type: runSh
     steps:
       - IN: dv-man-versionName
@@ -37,7 +37,6 @@ jobs:
         - scirpt: ./IN/sample-script-3/gitRepo/echo.sh
         - script: echo "ran ls 1234"
         - script: docker ps -a
-        - script: exit 1
     on_failure:
       - script: echo "on_failure"
        
