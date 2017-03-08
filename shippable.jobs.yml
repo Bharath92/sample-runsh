@@ -39,7 +39,7 @@ jobs:
         - script: docker ps -a
     on_failure:
       - script: echo "on_failure"
-  - name: testPrivate_runCI
+  - name: testprivate_runCI
     type: runCI
     steps:
       - IN: split-branch-hippo-cms-runSh
