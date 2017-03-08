@@ -43,4 +43,5 @@ jobs:
     type: runCI
     steps:
       - IN: split-branch-hippo-cms-runSh
+      - IN: sample-script-3
        
