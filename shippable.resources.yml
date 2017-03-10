@@ -6,6 +6,7 @@ resources:
       sourceName: Bharath92/sample-script
       branch: master
       buildOnCommit: true
+      xyz: abc
   - name: notification-slack
     type: notification
     integration: slack
