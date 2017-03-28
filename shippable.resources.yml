@@ -36,9 +36,9 @@ resources:
     type: time
     seed:
       interval: "*/1 * * * *"
-  - name: my_gh_ssh
-    type: integration
-    integration: bharath_ssh
+  # - name: my_gh_ssh
+  #   type: integration
+  #   integration: bharath_ssh
   - name: rcParams                              #required
     type: params                                #required
     version:
