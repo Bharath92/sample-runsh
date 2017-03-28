@@ -12,7 +12,7 @@ resources:
     integration: slack
     pointer:
       recipients:
-        - "#test_interns"
+        - "@bharath"
   - name: dv-image
     type: image
     integration: image
@@ -39,4 +39,10 @@ resources:
   - name: my_gh_ssh
     type: integration
     integration: bharath_ssh
+  - name: rcParams                              #required
+    type: params                                #required
+    version:
+      params:
+        apiUrl: "https://rcapi.shippable.com"    
+        apiToken: "apiToken "
         
