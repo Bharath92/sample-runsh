@@ -36,11 +36,9 @@ jobs:
       - TASK:
         - scirpt: ./IN/sample-script-3/gitRepo/check_queue.sh
         - scirpt: ./IN/sample-script-3/gitRepo/echo.sh
-        - script: cd /IN && ls
     on_success:
-      - NOTIFY: notification-slack
+      - script: echo "success"
     on_failure:
-      - NOTIFY: notification-slack
       - script: echo "on_failure"
   #- name: testprivate_runCI
   #  type: runCI
