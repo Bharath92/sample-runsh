@@ -33,6 +33,7 @@ jobs:
       - IN: dv-image
       - IN: sample-script-3
       - IN: rcParams
+      - IN: nightly-trigger
       - TASK:
         - script: pwd
         - script: echo $RCPARAMS_PARAMS_APIURL
