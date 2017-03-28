@@ -44,6 +44,5 @@ resources:
     version:
       params:
         apiUrl: "https://rcapi.shippable.com"    
-        secure: FiwXMrYJ2zNBqHF4yHtVMHftDw/Fx4hJZhp2XQf78/98isgKgV2/eZwZIg/4JQfiA/32PoO4xxBX54IGO2WVHdJpaRK+5WGEU9xOXhrUGhQ/6d7/XcVDdzIemMAVxmU6mv9SJV2rEHqkGfhwIzu4m9zxEBs+84xBzPVOVCZqxTS6z+74sEf0KTOMkYryIRrgmCmGsUpc1Lrr2TPurvFbmYDauiClRs2ZfgJhht1qvgeaJat4y/DPm+sHLkkYWyTCaqX8maOgQTxx359DacfhuW1ae/E2wJua12bQRX6QJPTxqLxYUWVKWovO2fHx1uRLrhN7DvPyUwfOjs+vHUkGQg==
-
+        secure: mzY4fOxyKbXxLeVn+N/trxHFPmg/bEN78JHVr06H6+Xz77X7tNzHWXIZxrkTHwHwiRKNgCFuRf2BKUpPhw8yh69WBjp09qz4Yyovga47EukSMmeJL+3LFmYQftKFHXD01SstxJw6AVXjmp3Q8ZYISzCPRiGcRuWL36OvBWxoNOYJklmiyy8T51FCvHTUefMMt3EQm639pOaX/5NqZfk+GMUobZpoZ/5qSOP7qC1rbwb4FiZpDB4cRMMDXjejH8gaC+23gtx/c972JFdOPFGzw80jKRHw/ZcK+wGA00fuEptzmnoAxuvBLfBThmlz2SGWOBeYcwlr2efN5b9S1a1ieg==
         
