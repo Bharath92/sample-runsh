@@ -37,7 +37,6 @@ jobs:
         - script: pwd
         - script: echo $RCPARAMS_PARAMS_APIURL
         - scirpt: ./IN/sample-script-3/gitRepo/check_queue.sh
-        - script: cd /IN/sample-script-3/gitRepo && ls
         - scirpt: ./IN/sample-script-3/gitRepo/echo.sh
         - script: echo "ran ls 1234"
         - script: docker ps -a
