@@ -44,5 +44,5 @@ resources:
     version:
       params:
         apiUrl: "https://rcapi.shippable.com"    
-        apiToken: "apiToken "
+        secure: TvgpJOlT5408Rt+8aGg6IrVZ+WxhK1DNCUFzt9mfc8/WKYuieK3ihwd5ezNHybXHhGXWLEDXffgyeykHxllReoxT8EGh59iA0hDOszZUlTmEgmQFlgUpHWawGV56ExOdo5FcXbpJR36JPsOivaCbUt327Wc2fzWr0Gm/U9RRlE2LifdxXps6mR3U43HL0BoQcmRy3UaSiUYTFpCcfboCyNs9Ik7+fLHoZRDIiqesPDzNGCIvK2Vift39FZ6Sze7ebYsoE6N3yoTBFK5ce7htijBctR8pYcJSjrp+ROLHq851WfEr+XoQKqdocZYAz+GYEWsZuUOLe+mRhOUiRqdC8g==
         
