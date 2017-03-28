@@ -52,6 +52,6 @@ resources:
       params:
         api_url: "https://rcapi.shippable.com"    
         secure: a02USw9BscPP0OxeVinXpeMdV1YHSO4O9FCNTXIh8/s6NpFuw8UOQdD5dmzmBuam5pNG8A1vDOBfru7JoUKlv5ZQUxD1M9W9pUEbkEi6xJRjCJW6R5dVMzSnjz6Dx+zTFP3VF1HgsKNfss4c2wX2xNimVFeRnAsmGMtnU8hjr758vxw54NYSZH+px/KenV0xMTixkF2As8bPjrfjj3ou3DyAIQ/28Bp5LYgjZTy4AkQeMewKhttRVdBz9pVJ689b9Hw/7ZumjiYJoDYkYdVkq3km/pEf38cZytwwX9zbLQ3N8pZh7rZCC3Vps7W4VUJ2pczla+n7ozERRImSgl1JKA==
-        queue_limit: 30
-        queue_limit_jobTrigger: 1000
+        default_queue_limit: 0
+        queue_limits: '{"job.trigger": 1}'
 
