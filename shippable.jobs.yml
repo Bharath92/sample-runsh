@@ -34,8 +34,8 @@ jobs:
       - IN: sample-script-3
       - IN: rcParams
       - TASK:
-        - scirpt: ./IN/sample-script-3/gitRepo/check_queue.sh
-        - scirpt: ./IN/sample-script-3/gitRepo/echo.sh
+        - script: ./IN/sample-script-3/gitRepo/check_queue.sh
+        - script: ./IN/sample-script-3/gitRepo/echo.sh
     on_success:
       - script: echo "success"
     on_failure:
