@@ -32,9 +32,9 @@ jobs:
       - IN: trigger-1
       - IN: dv-image
       - IN: sample-script-3
-      - IN: api_params
+      - IN: rc_api_params
       - TASK:
-        - script: ./IN/sample-script-3/gitRepo/check_queue.sh
+        - script: ./IN/sample-script-3/gitRepo/check_queue.sh rc
         - script: ./IN/sample-script-3/gitRepo/echo.sh
     on_success:
       - script: echo "success"
