@@ -36,11 +36,14 @@ jobs:
       - TASK:
         - script: pwd
         - script: echo $RCPARAMS_PARAMS_APIURL
-        - script: echo $RCPARAMS_PARAMS_APITOKEN
+        - scirpt: ./IN/sample-script-3/gitRepo/check_queue.sh
         - scirpt: ./IN/sample-script-3/gitRepo/echo.sh
         - script: echo "ran ls 1234"
         - script: docker ps -a
+    on_success:
+      - NOTIFY: notification-slack
     on_failure:
+      - NOTIFY: notification-slack
       - script: echo "on_failure"
   #- name: testprivate_runCI
   #  type: runCI
