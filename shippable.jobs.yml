@@ -32,8 +32,11 @@ jobs:
       - IN: trigger-1
       - IN: dv-image
       - IN: sample-script-3
+      - IN: rcParams
       - TASK:
         - script: pwd
+        - script: echo $RCPARAMS_PARAMS_APIURL
+        - script: echo $RCPARAMS_PARAMS_APITOKEN
         - scirpt: ./IN/sample-script-3/gitRepo/echo.sh
         - script: echo "ran ls 1234"
         - script: docker ps -a
