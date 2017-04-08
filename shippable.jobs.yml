@@ -9,7 +9,7 @@ jobs:
         - script: printenv
         - script: echo "ran ls 12345"
         - script: echo "lololo"
-        - script: for i in {1..5000}; do echo "$i"; done
+        - script: for i in {1..500}; do echo "$i"; done
     on_success:
       - script: echo "on_success"
       - scirpt: echo $DVIMAGE_INTEGRATION_USERNAME
