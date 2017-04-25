@@ -5,6 +5,7 @@ jobs:
       - IN: trigger-1
       - IN: myParams
       - IN: dv-image
+      - IN: sample-script-3
       - TASK:
         - script: printenv
         - script: echo "ran ls 12345"
