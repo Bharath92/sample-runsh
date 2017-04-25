@@ -3,6 +3,7 @@ resources:
     type: gitRepo
     integration: github
     pointer:
+      sourceName: Bharath92/sample-script
       branch: master
       buildOnCommit: true
       xyz: abc
