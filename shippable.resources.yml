@@ -3,6 +3,7 @@ resources:
     type: gitRepo
     integration: github
     pointer:
+      sourceName: Bharath92/samplePyt
       branch: master
       buildOnCommit: true
   - name: notification-slack
