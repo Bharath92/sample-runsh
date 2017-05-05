@@ -8,6 +8,7 @@ jobs:
       - IN: sample-script-3
       - TASK:
         - script: printenv
+        - script: sleep 180
         - script: echo "ran ls 12345"
         - script: echo "lololo"
         - script: for i in {1..500}; do echo "$i"; done
