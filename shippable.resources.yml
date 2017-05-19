@@ -6,6 +6,20 @@ resources:
       sourceName: Bharath92/sample-script
       branch: master
       buildOnCommit: true
+  - name: testprivate_gitRepo
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: Bharath92/testprivate
+      branch: master
+      buildOnCommit: false
+  - name: sampleJav_gitRepo
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: Bharath92/sampleJav
+      branch: master
+      buildOnCommit: false
   - name: notification-slack
     type: notification
     integration: slack
