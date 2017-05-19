@@ -6,6 +6,8 @@ jobs:
       - IN: myParams
       - IN: dv-image
       - IN: sample-script-3
+      - OUT: testprivate_ciRepo
+      - OUT: sampleJav_ciRepo
       - TASK:
         - script: printenv
         - script: echo "ran ls 12345"
@@ -42,13 +44,13 @@ jobs:
       - script: echo "success"
     on_failure:
       - script: echo "on_failure"
-  - name: testprivate_runCI
-    type: runCI
-    steps:
-      - IN: script-1
-      - IN: testprivate_ciRepo
-  - name: sampleJav_runCI
-    type: runCI
-    steps:
-      - IN: script-1
-      - IN: sampleJav_ciRepo
+ # - name: testprivate_runCI
+ #   type: runCI
+ #   steps:
+ #     - IN: script-1
+ #     - IN: testprivate_ciRepo
+ # - name: sampleJav_runCI
+ #   type: runCI
+ #   steps:
+ #     - IN: script-1
+ #     - IN: sampleJav_ciRepo
