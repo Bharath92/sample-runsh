@@ -8,10 +8,9 @@ jobs:
       - IN: sample-script-3
       - TASK:
         - script: printenv
-        - script: sleep 180
         - script: echo "ran ls 12345"
         - script: echo "lololo"
-        - script: for i in {1..500}; do echo "$i"; done
+        - script: for i in {1..10}; do echo "$i"; done
     on_success:
       - script: echo "on_success"
       - scirpt: echo $DVIMAGE_INTEGRATION_USERNAME
@@ -46,5 +45,10 @@ jobs:
   - name: testprivate_runCI
     type: runCI
     steps:
-      - IN: split-branch-hippo-cms-runSh
+      - IN: script-1
       - IN: testprivate_ciRepo
+  - name: sampleJav_runCI
+    type: runCI
+    steps:
+      - IN: script-1
+      - IN: sampleJav_ciRepo
