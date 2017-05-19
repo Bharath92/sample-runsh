@@ -43,8 +43,8 @@ jobs:
       - script: echo "success"
     on_failure:
       - script: echo "on_failure"
-  #- name: testprivate_runCI
-  #  type: runCI
-  #  steps:
-  #    - IN: split-branch-hippo-cms-runSh
-       
+  - name: testprivate_runCI
+    type: runCI
+    steps:
+      - IN: split-branch-hippo-cms-runSh
+      - IN: testprivate_ciRepo
