@@ -12,14 +12,14 @@ resources:
     pointer:
       sourceName: Bharath92/testprivate
       branch: master
-      buildOnCommit: false
+      buildOnCommit: true
   - name: sampleJav_gitRepo
     type: gitRepo
     integration: github
     pointer:
       sourceName: Bharath92/sampleJav
       branch: master
-      buildOnCommit: false
+      buildOnCommit: true
   - name: notification-slack
     type: notification
     integration: slack
