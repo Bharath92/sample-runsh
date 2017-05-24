@@ -15,6 +15,7 @@ jobs:
         - script: echo "ran ls 12345"
         - script: echo "lololo"
         - script: for i in {1..10}; do echo "$i"; done
+        - script: echo \"versionName=$BUILD_NUMBER\" > /build/state/script-1.env
     on_success:
       - script: echo "on_success"
       - scirpt: echo $DVIMAGE_INTEGRATION_USERNAME
