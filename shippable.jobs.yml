@@ -1,6 +1,7 @@
 jobs:
   - name: script-1
     type: runSh
+    allowPublicAccess: true
     steps:
       - IN: trigger-1
       - IN: myParams
@@ -35,6 +36,7 @@ jobs:
       - script: echo "on_success_man"
   - name: split-branch-hippo-cms-runSh
     type: runSh
+    allowPublicAccess: true
     steps:
       - IN: dv-man-versionName
       - IN: trigger-1
