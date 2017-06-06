@@ -45,10 +45,10 @@ resources:
       params:
         key1: "my(branch)name"    
         key2: "test!@#$%^&*"
-  - name: nightly-trigger
-    type: time
-    seed:
-      interval: "*/1 * * * *"
+  #- name: nightly-trigger
+  #  type: time
+  #  seed:
+  #    interval: "*/1 * * * *"
   # - name: my_gh_ssh
   #   type: integration
   #   integration: bharath_ssh
