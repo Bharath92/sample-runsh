@@ -7,10 +7,10 @@ jobs:
       - IN: myParams
       - IN: dv-image
       - IN: sample-script-3
-      - IN: testprivate_gitRepo
-      - IN: sampleJav_gitRepo
-      - OUT: sampleJav_ciRepo
-      - OUT: testprivate_ciRepo
+#      - IN: testprivate_gitRepo
+#      - IN: sampleJav_gitRepo
+#      - OUT: sampleJav_ciRepo
+#      - OUT: testprivate_ciRepo
       - TASK:
         - script: printenv
         - script: echo "ran ls 1234"
