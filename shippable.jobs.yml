@@ -5,7 +5,6 @@ jobs:
     steps:
       - IN: trigger-1
       - IN: myParams
-      - IN: dv-image
       - IN: sample-script-3
         showBuildStatus: true
       - OUT: dv-image
