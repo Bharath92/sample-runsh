@@ -37,6 +37,7 @@ jobs:
   - name: split-branch-hippo-cms-runSh
     type: runSh
     allowPublicAccess: true
+    showBuildStatus: true
     steps:
       - IN: dv-man-versionName
       - IN: trigger-1
