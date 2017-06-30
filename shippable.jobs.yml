@@ -8,6 +8,7 @@ jobs:
       - IN: dv-image
       - IN: sample-script-3
         showBuildStatus: true
+      - OUT: dv-image
 #      - IN: testprivate_gitRepo
 #      - IN: sampleJav_gitRepo
 #      - OUT: sampleJav_ciRepo
