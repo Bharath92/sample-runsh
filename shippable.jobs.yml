@@ -7,6 +7,7 @@ jobs:
       - IN: myParams
       - IN: dv-image
       - IN: sample-script-3
+        showBuildStatus: true
 #      - IN: testprivate_gitRepo
 #      - IN: sampleJav_gitRepo
 #      - OUT: sampleJav_ciRepo
@@ -37,12 +38,12 @@ jobs:
   - name: split-branch-hippo-cms-runSh
     type: runSh
     allowPublicAccess: true
-    showBuildStatus: true
     steps:
       - IN: dv-man-versionName
       - IN: trigger-1
       - IN: dv-image
       - IN: sample-script-3
+        showBuildStatus: true
       - IN: rc_api_params
       - TASK:
         - script: ./IN/sample-script-3/gitRepo/check_queue.sh rc
