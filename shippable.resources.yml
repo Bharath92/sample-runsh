@@ -6,6 +6,7 @@ resources:
       sourceName: Bharath92/sample-script
       branch: master
       buildOnCommit: true
+      buildOnPullRequest: true
   - name: testprivate_gitRepo
     type: gitRepo
     integration: github
