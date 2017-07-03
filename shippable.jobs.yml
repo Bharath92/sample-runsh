@@ -64,3 +64,4 @@ jobs:
       - IN: script-1
       - IN: sampleJav_ciRepo
       - OUT: dv-image
+      - OUT: fail-script
