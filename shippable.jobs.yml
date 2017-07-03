@@ -63,6 +63,8 @@ jobs:
     type: runSh
     steps:
       - IN: sampleJav_gitRepo
+      - TASK:
+        - script: echo lol
   - name: sampleJav_runCI
     type: runCI
     steps:
