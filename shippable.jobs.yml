@@ -10,7 +10,7 @@ jobs:
       - OUT: dv-image
 #      - IN: testprivate_gitRepo
 #      - IN: sampleJav_gitRepo
-      - OUT: sampleJav_ciRepo
+      - OUT: sampleJav_gitRepo
 #      - OUT: testprivate_ciRepo
       - TASK:
         - script: printenv
@@ -20,7 +20,7 @@ jobs:
         - script: echo "versionName=$BUILD_NUMBER" > /build/state/script-1.env
         - script: echo "versionName $BUILD_NUMBER"
         - script: echo "versionName=$IMAGE_TAG.$BUILD_NUMBER" > $JOB_STATE/dv-image.env
-        - script: echo "versionName=$IMAGE_TAG.$BUILD_NUMBER" > $JOB_STATE/sampleJav_ciRepo.env
+        - script: echo "versionName=$IMAGE_TAG.$BUILD_NUMBER" > $JOB_STATE/sampleJav_gitRepo.env
     on_success:
       - script: echo "on_success"
       - scirpt: echo $DVIMAGE_INTEGRATION_USERNAME
