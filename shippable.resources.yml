@@ -7,13 +7,13 @@ resources:
       branch: master
       buildOnCommit: true
       buildOnPullRequest: true
-  - name: testprivate_gitRepo
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: Bharath92/testprivate
-      branch: master
-      buildOnCommit: true
+  #- name: testprivate_gitRepo
+  #  type: gitRepo
+  #  integration: github
+  #  pointer:
+  #    sourceName: Bharath92/testprivate
+  #    branch: master
+  #    buildOnCommit: true
   - name: sampleJav_gitRepo
     type: gitRepo
     integration: github
