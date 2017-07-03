@@ -21,8 +21,8 @@ jobs:
         - script: echo "versionName $BUILD_NUMBER"
         - script: echo "versionName=$IMAGE_TAG.$BUILD_NUMBER" > $JOB_STATE/dv-image.env
         - script: echo "versionName=$IMAGE_TAG.$BUILD_NUMBER" > $JOB_STATE/sampleJav_gitRepo.env
-        - script: echo key1
-        - script: echo key2
+        - script: echo $key1
+        - script: echo $key2
     on_success:
       - script: echo "on_success"
       - scirpt: echo $DVIMAGE_INTEGRATION_USERNAME
