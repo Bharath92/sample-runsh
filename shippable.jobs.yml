@@ -62,5 +62,5 @@ jobs:
   - name: sampleJav_runCI
     type: runCI
     steps:
-      - IN: sampleJav_ciRepo
+      - IN: sampleJav_gitRepo
       - OUT: dv-image
