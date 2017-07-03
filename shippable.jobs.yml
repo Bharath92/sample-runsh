@@ -10,7 +10,7 @@ jobs:
       - OUT: dv-image
 #      - IN: testprivate_gitRepo
 #      - IN: sampleJav_gitRepo
-#      - OUT: sampleJav_ciRepo
+      - OUT: sampleJav_ciRepo
 #      - OUT: testprivate_ciRepo
       - TASK:
         - script: printenv
