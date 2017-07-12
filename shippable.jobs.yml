@@ -32,6 +32,44 @@ jobs:
       - script: echo "always"
       - script: echo "lol"
       - NOTIFY: notification-slack
+  - name: script-10
+    type: runSh
+    allowPublicAccess: true
+    steps:
+      - IN: trigger-1
+      - IN: myParams
+      - IN: sample-script-3
+        showBuildStatus: true
+      - TASK:
+        - script: echo $key1
+        - script: echo $key2
+        - script: echo $foo
+    on_success:
+      - script: echo "on_success"
+      - scirpt: echo $DVIMAGE_INTEGRATION_USERNAME
+    always:
+      - script: echo "always"
+      - script: echo "lol"
+      - NOTIFY: notification-slack
+  - name: script-11
+    type: runCLI
+    allowPublicAccess: true
+    steps:
+      - IN: trigger-1
+      - IN: myParams
+      - IN: myParams1
+      - IN: sample-script-3
+      - TASK:
+        - script: echo $key1
+        - script: echo $key2
+        - script: echo $foo
+    on_success:
+      - script: echo "on_success"
+      - scirpt: echo $DVIMAGE_INTEGRATION_USERNAME
+    always:
+      - script: echo "always"
+      - script: echo "lol"
+      - NOTIFY: notification-slack
   - name: dv-man-versionName
     type: manifest
     steps:
