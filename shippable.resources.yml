@@ -46,6 +46,12 @@ resources:
       params:
         key1: "my(branch)name"    
         key2: "test!@#$%^&*"
+  - name: myParams1                             #required
+    type: params                                #required
+    version:
+      params:
+        key1: "lolololol"    
+        key2: "kkkk"
   #- name: nightly-trigger
   #  type: time
   #  seed:
