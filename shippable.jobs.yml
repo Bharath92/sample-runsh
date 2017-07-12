@@ -46,6 +46,7 @@ jobs:
         - script: echo $key2
         - script: echo $foo
         - script: echo $test1
+        - script: echo lol
     on_success:
       - script: echo "on_success"
       - scirpt: echo $DVIMAGE_INTEGRATION_USERNAME
