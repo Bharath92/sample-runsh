@@ -52,7 +52,7 @@ resources:
     version:
       params:
         key1: "lolololol"    
-        key2: "kkkk"
+        key2: "kkkkd"
         secure: F4MbW7oQQyzlu2iKUGz+n6tCmv+6aOo8qrIQcRNP6lAlzcdF+9VZRkgXbeJADDib2cd3zfd+hTSdzbl9AnRWqishIxmELdqgdht7JoJsRyjfbzptyfOlksySh+Fyy0BAcT54yS76SUfgS77deGbe0DS87BzGLdpBy/xm8br17AOaxGst0wIRH1P67qKFw8c4LIaHcYJS6y0RJAP2stvgdzydcVYOoqhJ/K6/iFVmqSslM6wIlzniEQHrmHP3LeTMMUeqbXxeWVSHnoSpoDBEckmRXMqPFi1cBQqvebJEft0U/8JA9R/OtNLLtp6j6oomG/+nS5sY9BGODwSzWvdy0A==
         secure: IZ6L7WN+OxWffMVrVP1avnlPBUMwr0pIdPOcYlHox1KlPRzocHiAAIydmzVo49f0bVwfSj4lvhCO/KDTXBZxfrvdnbCWhdeiSQuB5+FfSNwahv7r/a4pwou+leK7CjLnMK+n39QhMOrog5p72/qP1iCNwPyD8gkZ8QB+d6YfOV5+XxLoFtsLA2EXCMxWHDPE+8g10EFZzrTKupGYaMAIi3z255URpp4/kQB9wJVXGMUNyF0MHpp69R3xox+kdBqrXolo9Dmq9ZuIPJ3Vr0Jk0fKaru9IS4AH2j+ui3kJ8J1e/rxGzAI0NHUGXlcq7L40kZhIynjaXRmH3TETuQ2HZg==
   #- name: nightly-trigger
