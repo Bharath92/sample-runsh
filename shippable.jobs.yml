@@ -59,8 +59,8 @@ jobs:
     allowPublicAccess: true
     steps:
       - IN: trigger-1
-      - IN: myParams
       - IN: myParams1
+      - IN: myParams
       - IN: sample-script-3
       - TASK:
         - script: echo $key1
