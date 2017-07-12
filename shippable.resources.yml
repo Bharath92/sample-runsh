@@ -45,7 +45,7 @@ resources:
     version:
       params:
         key2: "test!@#$%^&*"
-        secure: FtbV38ZQcmfmOf0Kk6B5Sj//9D1i+imvscqhadzZx1OQr3zNQP2q38EpbnAMgf1hqKs/cbsB0iJ4nc+d5peIdWztiqDiv0TcCEZtziwiRwJZcdK9493ATPxBgj4aB7rMgoFF9sYFpO3aMy1HWxv247mJj601Ud/mW5uWU033BIA3g+CngnIq8HkqaDiaxTbnEpGwliOoPZhawvVJBPtliWmabF+mMFHA7fvObmVNSC0KxQ6pOi1U1Tlyyhc44f7CShl/OwaL8fhSl0cz7Tfg7nZ5z0uGP71tIbN4AW/wyk/uEA29I2uSvV8c1EHggkWgNCrkGkDU7uPoQxKQhIj2Hw==
+        secure: jQuVs/hzjw0MYVbaPzJHGnso6LRnaRaMnU01UkBzLgybF+f9N0EnPWKLziZ2Ojx4o2xXVJkepdJNEwC1sVBY9QXMbpXEMCPENtOLEvciyZCWtCarpPZ6I8FIv9c3iUD3h8AO9NEDgza2G3nsfj3FFv/knaA1RhB/qVgXyKNuFHiVLctYbAvjJenIfMjvpT4pf0UoUnEwkRlxpEVAyIrq5w8gWqznJmkHHj4vcYSqRu+mBOddDVGz3v/LwX/KVsYLJzOnvJo8+OvF+DeKfl3+a//LLxaxX579IDzdtr1DNp8n8LHnHfSnroCH28T+fyY4BrmB7jQnMYE7et/feq2Vlg==
   - name: myParams1                             #required
     type: params                                #required
     version:
