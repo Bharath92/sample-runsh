@@ -46,12 +46,14 @@ resources:
       params:
         key1: "my(branch)name"    
         key2: "test!@#$%^&*"
+        secure: OyP0KaGCnj5iATnqYzPtLKVME23gd9NJtlumUS2joZ9s+rR+Ucqd+3JEIdAHubE3k2qpKmJG1p94kb9x4/KPJavkl5YvXQAkfRF8Wos85biUtWJ7s+BS/BTYNyeqBbRDkFkgAY7lG1L6V0m6KoAeSCyTm3J+2lAABse1iYl7TefdsWBfS9O5JmsMdA1KTR7XolyXIgyGuGRrl4bu+r1HCPi1CDb6nLxXGJT+keCUPv/mW7hBl+Lcn5X200y9cnYtcriCiheYt9cP5m/rt1+KqYCBFYgIy1wIYgzcyNqj2/+ZhjCZiQMKip5sdCY4bV+vdNaKexYSUoRwEKUwFcnoVw==
   - name: myParams1                             #required
     type: params                                #required
     version:
       params:
         key1: "lolololol"    
         key2: "kkkk"
+        secure: CwCRg41iuMqIJ3XRWkiabNgofYuuOLIjm1pXrLWpcGvkuWYn+qiD78JvrQJNanRL/FRif7CaADruegnXssyU8dpWZxMgA18o9lcdRoEd8hXKztMwBLWSMe+mJY21mf+/9o6oXDqZYTsU2Yu0oERYFxnuV1m9p53je5TzPAhVIrDx4QdyvZOMFO32DzfhFGI08wuESEB55dls12OoNgELeNR9GBj948/ejKXuaQ6cn+M+6TafxW0OSaOaKnSCVcPumeBdvajl+4T/eEWP10VAFvYvJvcQdr3NxL6vw9gHnk8EiFSMoJOypGCX3jKifeWgmsXY7AkjhkTDyT6X7XORmQ==
   #- name: nightly-trigger
   #  type: time
   #  seed:
