@@ -35,7 +35,6 @@ jobs:
       - NOTIFY: notification-slack
   - name: script-10
     type: runSh
-    allowPublicAccess: true
     steps:
       - IN: trigger-1
       - IN: myParams
@@ -56,7 +55,6 @@ jobs:
       - NOTIFY: notification-slack
   - name: script-11
     type: runCLI
-    allowPublicAccess: true
     steps:
       - IN: trigger-1
       - IN: myParams1
@@ -74,6 +72,10 @@ jobs:
       - script: echo "always"
       - script: echo "lol"
       - NOTIFY: notification-slack
+  - name: script-101
+    type: runSh
+    steps:
+      script: echo hey
   - name: dv-man-versionName
     type: manifest
     steps:
