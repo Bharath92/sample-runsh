@@ -75,7 +75,8 @@ jobs:
   - name: script-101
     type: runSh
     steps:
-      script: echo hey
+      TASK:
+      - script: echo hey
   - name: dv-man-versionName
     type: manifest
     steps:
