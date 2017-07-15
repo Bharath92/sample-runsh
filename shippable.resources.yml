@@ -45,14 +45,14 @@ resources:
     version:
       params:
         key2: "test!@#$%^&*"
-        secure: jQuVs/hzjw0MYVbaPzJHGnso6LRnaRaMnU01UkBzLgybF+f9N0EnPWKLziZ2Ojx4o2xXVJkepdJNEwC1sVBY9QXMbpXEMCPENtOLEvciyZCWtCarpPZ6I8FIv9c3iUD3h8AO9NEDgza2G3nsfj3FFv/knaA1RhB/qVgXyKNuFHiVLctYbAvjJenIfMjvpT4pf0UoUnEwkRlxpEVAyIrq5w8gWqznJmkHHj4vcYSqRu+mBOddDVGz3v/LwX/KVsYLJzOnvJo8+OvF+DeKfl3+a//LLxaxX579IDzdtr1DNp8n8LHnHfSnroCH28T+fyY4BrmB7jQnMYE7et/feq2Vlg==
+        secure: D7sWBglRpSbLIMhmBrk2EODRchKYD+kEG56qSJvfd5HA/lKrjWstJOHb0D4ezTf7tWULbMZWjJjBZQQX08ld8eEDFpVHbX9iWKtgSMccQE2Gf3lbzQcN2H17RZtIom3es7GWVjsqZMbF4acfcpZEvuM0JsuErpUwYZEXHzIekChakfAm0VouWIC4Emcmngaea/NhbxPtiZDMaonbV4gEB8uQD+IYX+dVYXTbN/2bQHmJknwiBkNM3kMwwydDmTLC7/XF8KJtf6QwO4ypg4fX/SB2FhrfWYGM/bY36GSmE5ETg5oIbSVV5QRqFAKa1uMbseDPSwh0sPn0cP6gbY+Ezg==
   - name: myParams1                             #required
     type: params                                #required
     version:
       params:
         key1: "lolololol"    
         key2: "kkkkd"
-        secure: IZ6L7WN+OxWffMVrVP1avnlPBUMwr0pIdPOcYlHox1KlPRzocHiAAIydmzVo49f0bVwfSj4lvhCO/KDTXBZxfrvdnbCWhdeiSQuB5+FfSNwahv7r/a4pwou+leK7CjLnMK+n39QhMOrog5p72/qP1iCNwPyD8gkZ8QB+d6YfOV5+XxLoFtsLA2EXCMxWHDPE+8g10EFZzrTKupGYaMAIi3z255URpp4/kQB9wJVXGMUNyF0MHpp69R3xox+kdBqrXolo9Dmq9ZuIPJ3Vr0Jk0fKaru9IS4AH2j+ui3kJ8J1e/rxGzAI0NHUGXlcq7L40kZhIynjaXRmH3TETuQ2HZg==
+        secure: D7sWBglRpSbLIMhmBrk2EODRchKYD+kEG56qSJvfd5HA/lKrjWstJOHb0D4ezTf7tWULbMZWjJjBZQQX08ld8eEDFpVHbX9iWKtgSMccQE2Gf3lbzQcN2H17RZtIom3es7GWVjsqZMbF4acfcpZEvuM0JsuErpUwYZEXHzIekChakfAm0VouWIC4Emcmngaea/NhbxPtiZDMaonbV4gEB8uQD+IYX+dVYXTbN/2bQHmJknwiBkNM3kMwwydDmTLC7/XF8KJtf6QwO4ypg4fX/SB2FhrfWYGM/bY36GSmE5ETg5oIbSVV5QRqFAKa1uMbseDPSwh0sPn0cP6gbY+Ezg==
   #- name: nightly-trigger
   #  type: time
   #  seed:
@@ -65,14 +65,14 @@ resources:
     version:
       params:
         apiUrl: "https://rcapi.shippable.com"    
-        secure: cUzqaLaYwkjKGWfN9tavu2M843JzEiHL+8Rxv2ywpLUba9mKzLsJx3BHtH8IUVqhtXC5t1CvjznY8F9BMSFXEeuPz8zcT+Mfnhqj9YOztGHD0a6Y5LWSKOASn3ugMzrzqYVgtKPHsxeYDy559qmp2IsPBjOhjmhCHnr7V2NH7Mf4IosYTuMncQOMBLLsx+4yjsYjyjhnIdh/G926IZHWDwgFf77InYgFI6g1bZtxAi88MHcuzarjwK8wIvRWuKGHU7HkLBnn0IYCwag25ZN6mo2XUrKn+x+nBrQoblzI1kgqGoFyVlFcWRaDBB3UlwW9Ab6M4Z30bl736TWJgskv8Q==
+        secure: D7sWBglRpSbLIMhmBrk2EODRchKYD+kEG56qSJvfd5HA/lKrjWstJOHb0D4ezTf7tWULbMZWjJjBZQQX08ld8eEDFpVHbX9iWKtgSMccQE2Gf3lbzQcN2H17RZtIom3es7GWVjsqZMbF4acfcpZEvuM0JsuErpUwYZEXHzIekChakfAm0VouWIC4Emcmngaea/NhbxPtiZDMaonbV4gEB8uQD+IYX+dVYXTbN/2bQHmJknwiBkNM3kMwwydDmTLC7/XF8KJtf6QwO4ypg4fX/SB2FhrfWYGM/bY36GSmE5ETg5oIbSVV5QRqFAKa1uMbseDPSwh0sPn0cP6gbY+Ezg==
         
   - name: rc_api_params
     type: params                                #required
     version:
       params:
         api_url: "https://rcapi.shippable.com"    
-        secure: a02USw9BscPP0OxeVinXpeMdV1YHSO4O9FCNTXIh8/s6NpFuw8UOQdD5dmzmBuam5pNG8A1vDOBfru7JoUKlv5ZQUxD1M9W9pUEbkEi6xJRjCJW6R5dVMzSnjz6Dx+zTFP3VF1HgsKNfss4c2wX2xNimVFeRnAsmGMtnU8hjr758vxw54NYSZH+px/KenV0xMTixkF2As8bPjrfjj3ou3DyAIQ/28Bp5LYgjZTy4AkQeMewKhttRVdBz9pVJ689b9Hw/7ZumjiYJoDYkYdVkq3km/pEf38cZytwwX9zbLQ3N8pZh7rZCC3Vps7W4VUJ2pczla+n7ozERRImSgl1JKA==
+        secure: D7sWBglRpSbLIMhmBrk2EODRchKYD+kEG56qSJvfd5HA/lKrjWstJOHb0D4ezTf7tWULbMZWjJjBZQQX08ld8eEDFpVHbX9iWKtgSMccQE2Gf3lbzQcN2H17RZtIom3es7GWVjsqZMbF4acfcpZEvuM0JsuErpUwYZEXHzIekChakfAm0VouWIC4Emcmngaea/NhbxPtiZDMaonbV4gEB8uQD+IYX+dVYXTbN/2bQHmJknwiBkNM3kMwwydDmTLC7/XF8KJtf6QwO4ypg4fX/SB2FhrfWYGM/bY36GSmE5ETg5oIbSVV5QRqFAKa1uMbseDPSwh0sPn0cP6gbY+Ezg==
         default_queue_limit: 1
         queue_limits: '{"job.trigger": 3}'
 
