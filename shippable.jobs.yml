@@ -78,6 +78,11 @@ jobs:
       - TASK:
         - script: echo hey
         - script: sleep 5
+  - name: script-111
+    type: runSh
+    steps:
+      - TASK:
+        - script: echo hey
   - name: dv-man-versionName
     type: manifest
     steps:
