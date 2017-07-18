@@ -80,6 +80,7 @@ jobs:
   - name: script-1111
     type: runCLI
     steps:
+      - IN: script-101
       - TASK:
         - script: echo hhhh
   - name: dv-man-versionName
