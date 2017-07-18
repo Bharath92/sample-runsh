@@ -114,16 +114,16 @@ jobs:
  #   steps:
  #     - IN: script-1
  #     - IN: testprivate_ciRepo
-  - name: test_lol
-    type: runSh
-    steps:
-      - IN: sampleJav_gitRepo
-      - TASK:
-        - script: echo lol
-  - name: sampleJav_runCI
-    type: runCI
-    steps:
-      - IN: test_lol
-      - IN: sampleJav_ciRepo
-      - OUT: dv-image
+ # - name: test_lol
+ #   type: runSh
+ #   steps:
+ #     - IN: sampleJav_gitRepo
+ #     - TASK:
+ #       - script: echo lol
+ # - name: sampleJav_runCI
+ #   type: runCI
+ #   steps:
+ #     - IN: test_lol
+ #     - IN: sampleJav_ciRepo
+ #     - OUT: dv-image
   
