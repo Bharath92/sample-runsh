@@ -77,12 +77,11 @@ jobs:
     steps:
       - TASK:
         - script: echo hey
-        - script: sleep 5
   - name: script-111
     type: runCLI
     steps:
       - TASK:
-        - script: echo hey
+        - script: echo hhhh
   - name: dv-man-versionName
     type: manifest
     steps:
