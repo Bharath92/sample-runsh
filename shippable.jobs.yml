@@ -77,6 +77,7 @@ jobs:
     steps:
       - TASK:
         - script: echo hey
+        - script: docker images
   - name: script-1111
     type: runCLI
     steps:
