@@ -83,6 +83,7 @@ jobs:
       - IN: script-101
       - TASK:
         - script: echo hhhh
+        - script: docker images
   - name: dv-man-versionName
     type: manifest
     steps:
