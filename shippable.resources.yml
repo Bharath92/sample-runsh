@@ -73,5 +73,5 @@ resources:
         queue_limits: '{"job.trigger": 3}'
   - name: docker-cli-config
     type: cliConfig
-    integration: image
+    integration: docker
 
