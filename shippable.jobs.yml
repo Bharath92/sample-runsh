@@ -80,7 +80,7 @@ jobs:
         - script: echo hey
         - script: aws --version
         - script: docker -v
-        - script: docker pull shipimg/api:master
+        - script: docker pull bharath92/gitissues
   - name: script-1111
     type: runCLI
     steps:
@@ -89,7 +89,7 @@ jobs:
       - TASK:
         - script: echo hhhh
         - script: docker -v
-        - script: docker pull shipimg/api:master
+        - script: docker pull bharath92/gitissues
   - name: dv-man-versionName
     type: manifest
     steps:
