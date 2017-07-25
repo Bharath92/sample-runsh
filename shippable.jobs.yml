@@ -75,12 +75,11 @@ jobs:
   - name: script-101
     type: runSh
     steps:
-      - IN: docker-cli-config
       - TASK:
         - script: echo hey
         - script: aws --version
         - script: docker -v
-        - script: docker pull bharath92/gitissues
+        #- script: docker pull bharath92/gitissues
   - name: script-1111
     type: runCLI
     steps:
