@@ -75,16 +75,21 @@ jobs:
   - name: script-101
     type: runSh
     steps:
+      - IN: docker-cli-config
       - TASK:
         - script: echo hey
         - script: aws --version
+        - script: docker -v
+        - script: docker pull shipimg/api:master
   - name: script-1111
     type: runCLI
     steps:
       - IN: script-101
+      - IN: docker-cli-config
       - TASK:
         - script: echo hhhh
-        - script: docker images
+        - script: docker -v
+        - script: docker pull shipimg/api:master
   - name: dv-man-versionName
     type: manifest
     steps:
