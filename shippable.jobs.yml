@@ -77,7 +77,6 @@ jobs:
     steps:
       - IN: docker-cli-config
       - TASK:
-        - script: sleep 60
         - script: echo hey
         - script: aws --version
         - script: docker -v
