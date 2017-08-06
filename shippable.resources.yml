@@ -45,6 +45,7 @@ resources:
     version:
       params:
         key2: "test!@#$%^&*"
+        secure: furP3H+H/SfaBBeuZ5eeET8sdXYB0qu+7Pqf2noCJdLvzVoPaTZQ7ZIudM5Y1+LyjpH4x1t0ZLugqFo714Kewz25H8Tho3QMlGOBtcfPeZzwUHfLyeryM9mVaMppA1hHMnZmaZZr5iQiq2HU6KZMw8jA2Lm8yJMc5WqvNLFeOB+LUVGR6gm0nfKNES3DGYV2IQzQnpiAwOO1GdQbgQHY9+OHRoIjmkcisOSYInUEJBAH4ys5+l878Erb+2yHZusoaMUnaKJgDVUHIkWSET39VXM+DofuEKhs+cU1a8PuqY5xWcUSMdDwGjqFoj8cOx/137DXSzhVFWxdOC2iPHf7Rg==
   - name: myParams1                             #required
     type: params                                #required
     version:
