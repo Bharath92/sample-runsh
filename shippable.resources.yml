@@ -78,4 +78,6 @@ resources:
   - name: aws-cli-config
     type: cliConfig
     integration: aws
+    pointer:
+      region: us-east-1
 
