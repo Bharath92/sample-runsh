@@ -36,23 +36,10 @@ jobs:
   - name: script-10
     type: runSh
     steps:
-      - IN: trigger-1
       - IN: myParams
-      - IN: sample-script-3
-        showBuildStatus: true
+      - IN: aws-cli-config
       - TASK:
-        - script: echo $key1
-        - script: echo $key2
-        - script: echo $foo
-        - script: echo $test1
-        - script: echo lol
-    on_success:
-      - script: echo "on_success"
-      - scirpt: echo $DVIMAGE_INTEGRATION_USERNAME
-    always:
-      - script: echo "always"
-      - script: echo "lol"
-      - NOTIFY: notification-slack
+        - script: docker pull $test
   - name: script-11
     type: runCLI
     steps:
