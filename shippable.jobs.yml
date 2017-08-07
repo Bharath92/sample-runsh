@@ -47,6 +47,12 @@ jobs:
       - IN: quay-cli-config
       - TASK:
         - script: docker pull quay.io/1992_bharath/gitissues
+  - name: dtr-test
+    type: runSh
+    steps:
+      - IN: dtr-cli-config
+      - TASK:
+        - script: docker pull quay.io/revathird/docker
   - name: script-11
     type: runCLI
     steps:
