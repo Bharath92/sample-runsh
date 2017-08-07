@@ -80,4 +80,6 @@ resources:
     integration: aws
     pointer:
       region: us-east-1
-
+  - name: quay-cli-config
+    type: cliConfig
+    integration: quay
