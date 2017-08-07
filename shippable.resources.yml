@@ -83,3 +83,6 @@ resources:
   - name: quay-cli-config
     type: cliConfig
     integration: quay
+  - name: dtr-cli-config
+    type: cliConfig
+    integration: dtr
