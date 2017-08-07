@@ -41,6 +41,12 @@ jobs:
       - TASK:
         - script: docker pull $test
         - script: sudo docker images
+  - name: script-quay-test
+    type: runSh
+    steps:
+      - IN: quay-cli-config
+      - TASK:
+        - script: docker pull quay.io/1992_bharath/gitissues
   - name: script-11
     type: runCLI
     steps:
