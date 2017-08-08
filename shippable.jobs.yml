@@ -54,6 +54,12 @@ jobs:
       - TASK:
         - script: ifconfig
         - script: docker pull quay.io/revathird/docker
+  - name: pdr-test
+    type: runSh
+    steps:
+      - IN: pdr-cli-config
+      - TASK:
+        - script: docker pull 159.203.102.90/test
   - name: script-11
     type: runCLI
     steps:
