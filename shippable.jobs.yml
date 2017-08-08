@@ -52,6 +52,7 @@ jobs:
     steps:
       - IN: dtr-cli-config
       - TASK:
+        - script: ifconfig
         - script: docker pull quay.io/revathird/docker
   - name: script-11
     type: runCLI
