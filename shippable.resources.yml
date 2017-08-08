@@ -91,3 +91,6 @@ resources:
   - name: dtr-cli-config
     type: cliConfig
     integration: dtr
+  - name: pdr-cli-config
+    type: cliConfig
+    integration: pdr
