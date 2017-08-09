@@ -59,7 +59,7 @@ jobs:
     steps:
       - IN: pdr-cli-config
       - TASK:
-        - script: docker pull 159.203.102.90/test
+        - script: docker pull 174.138.49.87/alpine
   - name: script-11
     type: runCLI
     steps:
