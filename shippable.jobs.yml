@@ -65,10 +65,9 @@ jobs:
     steps:
       - IN: simple-runsh
       - TASK:
-        - script: shipctl get_resource_version_key simple-runsh "propertyBag"
-        - script: shipctl get_resource_version_key simple-runsh sup
-        - script: shipctl get_resource_version_key lol lol
-  
+        - script: x=$(shipctl get_resource_version_key simple-runsh "propertyBag")
+        - script: echo $x | jq '.'
+        
         
   - name: simple-runsh
     type: runSh
