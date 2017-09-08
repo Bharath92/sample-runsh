@@ -33,33 +33,33 @@ jobs:
       - script: echo "always"
       - script: echo "lol"
       - NOTIFY: notification-slack
-  - name: script-10
-    type: runSh
-    steps:
-      - IN: myParams
-      - IN: aws-cli-config
-      - TASK:
-        - script: docker pull $test
-        - script: sudo docker images
-  - name: script-quay-test
-    type: runSh
-    steps:
-      - IN: quay-cli-config
-      - TASK:
-        - script: docker pull quay.io/1992_bharath/gitissues
-  - name: dtr-test
-    type: runSh
-    steps:
-      - IN: dtr-cli-config
-      - TASK:
-        - script: ifconfig
-        - script: docker pull quay.io/revathird/docker
-  - name: pdr-test
-    type: runSh
-    steps:
-      - IN: pdr-cli-config
-      - TASK:
-        - script: docker pull 174.138.49.87/alpine
+  #- name: script-10
+  #  type: runSh
+  #  steps:
+  #    - IN: myParams
+  #    - IN: aws-cli-config
+  #    - TASK:
+  #      - script: docker pull $test
+  #      - script: sudo docker images
+  #- name: script-quay-test
+  #  type: runSh
+  #  steps:
+  #    - IN: quay-cli-config
+  #    - TASK:
+  #      - script: docker pull quay.io/1992_bharath/gitissues
+  #- name: dtr-test
+  #  type: runSh
+  #  steps:
+  #    - IN: dtr-cli-config
+  #    - TASK:
+  #      - script: ifconfig
+  #      - script: docker pull quay.io/revathird/docker
+  #- name: pdr-test
+  #  type: runSh
+  #  steps:
+  #    - IN: pdr-cli-config
+  #    - TASK:
+  #      - script: docker pull 174.138.49.87/alpine
   - name: sleep-5m
     type: runSh
     steps:
@@ -84,24 +84,24 @@ jobs:
       - script: echo "always"
       - script: echo "lol"
       - NOTIFY: notification-slack
-  - name: script-101
-    type: runSh
-    steps:
-      - IN: docker-cli-config
-      - TASK:
-        - script: echo hey
-        - script: aws --version
-        - script: docker -v
-        - script: docker pull bharath92/gitissues
-  - name: script-1111
-    type: runCLI
-    steps:
-      - IN: script-101
-      - IN: docker-cli-config
-      - TASK:
-        - script: echo hhhh
-        - script: docker -v
-        - script: docker pull bharath92/gitissues
+  #- name: script-101
+  #  type: runSh
+  #  steps:
+  #    - IN: docker-cli-config
+  #    - TASK:
+  #      - script: echo hey
+  #      - script: aws --version
+  #      - script: docker -v
+  #      - script: docker pull bharath92/gitissues
+  #- name: script-1111
+  #  type: runCLI
+  #  steps:
+  #    - IN: script-101
+  #    - IN: docker-cli-config
+  #    - TASK:
+  #      - script: echo hhhh
+  #      - script: docker -v
+  #      - script: docker pull bharath92/gitissues
   - name: dv-man-versionName
     type: manifest
     steps:
