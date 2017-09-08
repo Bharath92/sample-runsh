@@ -67,7 +67,7 @@ jobs:
       - TASK:
         - script: shipctl get_resource_version_key simple-runsh "propertyBag"
         - script: shipctl get_resource_version_key simple-runsh propertyBag
-        - sleep 2m
+        - script: sleep 2m
   
         
   - name: simple-runsh
