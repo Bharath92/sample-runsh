@@ -72,7 +72,7 @@ jobs:
         - script: shipctl get_resource_state simple-runsh
         - script: shipctl get_resource_meta simple-runsh
         - script: shipctl get_resource_type simple-runsh
-        - script: ls $(shipctl get_resource_meta simple-runsh)
+        - script: cat $(shipctl get_resource_meta simple-runsh)/version.json | jq '.'
         
   - name: simple-runsh
     type: runSh
