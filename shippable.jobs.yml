@@ -73,7 +73,8 @@ jobs:
         - script: shipctl get_resource_state simple-runsh
         - script: shipctl get_resource_meta simple-runsh
         - script: shipctl get_resource_type simple-runsh
-        - script: shipctl get_resource_version_key simple-runsh propertyBag.sha
+        - script: shipctl get_resource_version_key simple-runsh ""
+        - script: shipctl get_resource_version_key simple-runsh "''"
         - script: shipctl get_resource_version_key simple-runsh name
   
         
