@@ -65,7 +65,10 @@ jobs:
     steps:
       - IN: simple-runsh
       - TASK:
-        - script: sleep 5m
+        - script: shipctl get_resource_version_id simple-runsh
+        - script: shipctl get_resource_version_number simple-runsh
+        - script: shipctl get_resource_version_name simple-runsh
+
   - name: simple-runsh
     type: runSh
     steps:
