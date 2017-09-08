@@ -65,6 +65,7 @@ jobs:
     steps:
       - IN: simple-runsh
       - TASK:
+        - script: chmod +x /usr/local/bin/shipctl
         - script: shipctl get_resource_version_id simple-runsh
         - script: shipctl get_resource_version_number simple-runsh
         - script: shipctl get_resource_version_name simple-runsh
