@@ -73,6 +73,11 @@ jobs:
         - script: shipctl get_resource_meta simple-runsh
         - script: shipctl get_resource_type simple-runsh
         - script: cat $(shipctl get_resource_meta simple-runsh)/version.json | jq '.'
+        - script: UP=$(shipctl get_resource_name  simple-runsh)
+        - script: resource_version_file=$(shipctl get_resource_meta $UP)
+        - script: x="propertyBag"
+        - script: read_version_key_value="cat $resource_version_file | jq '.version.'$x''"
+        - script: eval $read_version_key_value
         
   - name: simple-runsh
     type: runSh
