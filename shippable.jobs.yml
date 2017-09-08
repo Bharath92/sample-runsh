@@ -102,32 +102,32 @@ jobs:
   #      - script: echo hhhh
   #      - script: docker -v
   #      - script: docker pull bharath92/gitissues
-  - name: dv-man-versionName
-    type: manifest
-    steps:
-      - IN: script-1
-      - IN: dv-image
-        pull: false
-        versionName: latest
-    on_success:
-      - script: echo "on_success_man"
-  - name: split-branch-hippo-cms-runSh
-    type: runSh
-    allowPublicAccess: true
-    steps:
-      - IN: dv-man-versionName
-      - IN: trigger-1
-      - IN: dv-image
-      - IN: sample-script-3
-        showBuildStatus: true
-      - IN: rc_api_params
-      - TASK:
-        - script: ./IN/sample-script-3/gitRepo/check_queue.sh rc
-        - script: ./IN/sample-script-3/gitRepo/echo.sh
-    on_success:
-      - script: echo "success"
-    on_failure:
-      - script: echo "on_failure"
+  #- name: dv-man-versionName
+  #  type: manifest
+  #  steps:
+  #    - IN: script-1
+  #    - IN: dv-image
+  #      pull: false
+  #      versionName: latest
+  #  on_success:
+  #    - script: echo "on_success_man"
+ # - name: split-branch-hippo-cms-runSh
+ #   type: runSh
+ #   allowPublicAccess: true
+ #   steps:
+ #     - IN: dv-man-versionName
+ #     - IN: trigger-1
+ #     - IN: dv-image
+ #     - IN: sample-script-3
+ #       showBuildStatus: true
+ #     - IN: rc_api_params
+ #     - TASK:
+ #       - script: ./IN/sample-script-3/gitRepo/check_queue.sh rc
+ #       - script: ./IN/sample-script-3/gitRepo/echo.sh
+ #   on_success:
+ #     - script: echo "success"
+ #   on_failure:
+ #     - script: echo "on_failure"
  # - name: testprivate_runCI
  #   type: runCI
  #   steps:
