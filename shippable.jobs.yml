@@ -82,6 +82,7 @@ jobs:
   - name: simple-runsh
     type: runSh
     steps:
+      - IN: admiral_runCI
       - TASK:
         - script: echo lol
   #- name: script-11
@@ -164,4 +165,8 @@ jobs:
  #     - IN: test_lol
  #     - IN: sampleJav_ciRepo
  #     - OUT: dv-image
+   - name: admiral_runCI
+     type: runCI
+     steps:
+       - IN: admiral_ciRepo
   
