@@ -78,7 +78,6 @@ jobs:
   - name: simple-runsh
     type: runSh
     steps:
-      - IN: admiral_runCI
       - TASK:
         - script: echo lol
   #- name: script-11
