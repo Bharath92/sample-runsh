@@ -1,38 +1,38 @@
 jobs:
-  - name: script-1
-    type: runSh
-    allowPublicAccess: true
-    steps:
-      - IN: trigger-1
-      - IN: myParams
-      - IN: myParams1
-      - IN: sample-script-3
-        showBuildStatus: true
-      - OUT: dv-image
+ # - name: script-1
+ #   type: runSh
+ #   allowPublicAccess: true
+ #   steps:
+ #     - IN: trigger-1
+ #     - IN: myParams
+ #     - IN: myParams1
+ #     - IN: sample-script-3
+ #       showBuildStatus: true
+ #     - OUT: dv-image
 #      - IN: testprivate_gitRepo
 #      - IN: sampleJav_gitRepo
-      - OUT: sampleJav_gitRepo
+ #     - OUT: sampleJav_gitRepo
 #      - OUT: testprivate_ciRepo
-      - TASK:
-        - script: printenv
-        - script: echo "ran ls 1234"
-        - script: echo "lololo"
-        - script: for i in {1..9}; do echo "$i"; done
-        - script: echo "versionName=$BUILD_NUMBER" > /build/state/script-1.env
-        - script: echo "versionName $BUILD_NUMBER"
-        - script: echo "versionName=$IMAGE_TAG.$BUILD_NUMBER" > $JOB_STATE/dv-image.env
-        - script: echo "versionName=$IMAGE_TAG.$BUILD_NUMBER" > $JOB_STATE/sampleJav_gitRepo.env
-        - script: echo $key1
-        - script: echo $key2
-        - script: echo $foo
-        - script: echo $test1
-    on_success:
-      - script: echo "on_success"
-      - scirpt: echo $DVIMAGE_INTEGRATION_USERNAME
-    always:
-      - script: echo "always"
-      - script: echo "lol"
-      - NOTIFY: notification-slack
+ #     - TASK:
+ #       - script: printenv
+ #       - script: echo "ran ls 1234"
+ #       - script: echo "lololo"
+ #       - script: for i in {1..9}; do echo "$i"; done
+ #       - script: echo "versionName=$BUILD_NUMBER" > /build/state/script-1.env
+ #       - script: echo "versionName $BUILD_NUMBER"
+ #       - script: echo "versionName=$IMAGE_TAG.$BUILD_NUMBER" > $JOB_STATE/dv-image.env
+ #       - script: echo "versionName=$IMAGE_TAG.$BUILD_NUMBER" > $JOB_STATE/sampleJav_gitRepo.env
+ #       - script: echo $key1
+ #       - script: echo $key2
+ #       - script: echo $foo
+ #       - script: echo $test1
+ #   on_success:
+ #     - script: echo "on_success"
+ #     - scirpt: echo $DVIMAGE_INTEGRATION_USERNAME
+ #   always:
+ #     - script: echo "always"
+ #     - script: echo "lol"
+ #     - NOTIFY: notification-slack
   #- name: script-10
   #  type: runSh
   #  steps:
@@ -65,25 +65,25 @@ jobs:
     steps:
       - TASK:
         - script: sleep 5m
-  - name: script-11
-    type: runCLI
-    steps:
-      - IN: trigger-1
-      - IN: myParams1
-      - IN: myParams
-      - IN: sample-script-3
-      - TASK:
-        - script: echo $key1
-        - script: echo $key2
-        - script: echo $foo
-        - script: echo $test1
-    on_success:
-      - script: echo "on_success"
-      - scirpt: echo $DVIMAGE_INTEGRATION_USERNAME
-    always:
-      - script: echo "always"
-      - script: echo "lol"
-      - NOTIFY: notification-slack
+  #- name: script-11
+  #  type: runCLI
+  #  steps:
+  #    - IN: trigger-1
+  #    - IN: myParams1
+  #    - IN: myParams
+  #    - IN: sample-script-3
+  #    - TASK:
+  #      - script: echo $key1
+  #      - script: echo $key2
+  #      - script: echo $foo
+  #      - script: echo $test1
+  #  on_success:
+  #    - script: echo "on_success"
+  #    - scirpt: echo $DVIMAGE_INTEGRATION_USERNAME
+  #  always:
+  #    - script: echo "always"
+  #    - script: echo "lol"
+  #    - NOTIFY: notification-slack
   #- name: script-101
   #  type: runSh
   #  steps:
