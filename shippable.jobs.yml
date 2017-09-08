@@ -63,8 +63,14 @@ jobs:
   - name: sleep-5m
     type: runSh
     steps:
+      - IN: simple-runsh
       - TASK:
         - script: sleep 5m
+  - name: simple-runsh
+    type: runSh
+    steps:
+      - TASK:
+        - script: echo lol
   #- name: script-11
   #  type: runCLI
   #  steps:
