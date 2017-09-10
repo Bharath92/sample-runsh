@@ -73,7 +73,8 @@ jobs:
     type: runSh
     steps:
       - TASK:
-        - script: echo lol
+        - script: ls /build/IN/dv-image
+        - script: cat /build/IN/dv-image/version.json | jq '.'
   #- name: script-11
   #  type: runCLI
   #  steps:
@@ -154,8 +155,8 @@ jobs:
  #     - IN: test_lol
  #     - IN: sampleJav_ciRepo
  #     - OUT: dv-image
-  - name: admiral_runCI
-    type: runCI
-    steps:
-      - IN: admiral_ciRepo
+ # - name: admiral_runCI
+ #   type: runCI
+ #   steps:
+ #     - IN: admiral_ciRepo
   
