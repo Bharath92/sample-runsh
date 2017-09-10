@@ -72,6 +72,7 @@ jobs:
   - name: simple-runsh
     type: runSh
     steps:
+      - IN: dv-image
       - TASK:
         - script: ls /build/IN/dv-image
         - script: cat /build/IN/dv-image/version.json | jq '.'
