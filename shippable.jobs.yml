@@ -65,7 +65,7 @@ jobs:
     steps:
       - IN: simple-runsh
       - TASK:
-        - script: echo lol
+        - script: shipctl get_resource_version_key dv-imagea
         
         
   - name: simple-runsh
