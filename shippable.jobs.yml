@@ -65,8 +65,7 @@ jobs:
     steps:
       - IN: simple-runsh
       - TASK:
-        - script: x=$(shipctl get_resource_version_key simple-runsh "propertyBag")
-        - script: echo $x | jq '.'
+        - script: echo lol
         
         
   - name: simple-runsh
@@ -74,8 +73,17 @@ jobs:
     steps:
       - IN: dv-image
       - TASK:
-        - script: ls /build/IN/dv-image
-        - script: cat /build/IN/dv-image/version.json | jq '.'
+        - script: x=$(shipctl get_resource_version_key dv-image versionName)
+        - script: echo $x | jq '.'
+        - script: x=$(shipctl get_resource_version_key dv-image versionNumber)
+        - script: echo $x | jq '.'
+        - script: x=$(shipctl get_resource_version_key dv-image versionId)
+        - script: echo $x | jq '.'
+        - script: x=$(shipctl get_resource_version_key dv-image env)
+        - script: echo $x | jq '.'
+        - script: x=$(shipctl get_resource_version_key dv-image sha)
+        - script: echo $x | jq '.'
+        
   #- name: script-11
   #  type: runCLI
   #  steps:
