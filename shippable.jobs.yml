@@ -73,6 +73,8 @@ jobs:
     steps:
       - IN: dv-image
       - TASK:
+        - script: cat /build/IN/dv-image/version.json | jq '.'
+        - script: echo ====================================
         - script: x=$(shipctl get_resource_version_key dv-image versionName)
         - script: echo $x | jq '.'
         - script: x=$(shipctl get_resource_version_key dv-image versionNumber)
