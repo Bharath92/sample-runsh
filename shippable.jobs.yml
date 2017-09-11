@@ -73,13 +73,13 @@ jobs:
     steps:
       - IN: dv-image
       - TASK:
-        - script: x=$(shipctl get_resource_version_key dv-image versionName)
+        - script: x=$(shipctl get_resource_version_key "dv-image" "versionName")
         - script: echo $x | jq '.'
-        - script: x=$(shipctl get_resource_version_key dv-image versionNumber)
+        - script: x=$(shipctl get_resource_version_key dv-image "versionNumber")
         - script: echo $x | jq '.'
-        - script: x=$(shipctl get_resource_version_key dv-image versionId)
+        - script: x=$(shipctl get_resource_version_key "dv-image" versionId)
         - script: echo $x | jq '.'
-        - script: x=$(shipctl get_resource_version_key dv-image env)
+        - script: x=$(shipctl get_resource_version_key dv-image "env")
         - script: echo $x | jq '.'
         - script: x=$(shipctl get_resource_version_key dv-image sha)
         - script: echo $x | jq '.'
