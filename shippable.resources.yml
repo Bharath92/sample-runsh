@@ -32,6 +32,10 @@ resources:
     integration: image
     pointer:
       sourceName: "library/nginx"
+    version:
+      versionName: master.58
+      env: production
+      sha: abcdefg
     seed:
       versionName: latest
   - name: email
