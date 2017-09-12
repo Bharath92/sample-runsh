@@ -65,7 +65,9 @@ jobs:
     steps:
       - IN: simple-runsh
       - TASK:
-        - script: shipctl get_resource_version_key dv-imagea
+        - script: docker pull drydock/u14golall:master
+        - script: docker images | grep drydock/u14golall
+        - script: docker run $(docker images | grep drydock/u14golall | awk '{ print $3 }') cat /usr/bin/local/utility.sh
         
         
   - name: simple-runsh
