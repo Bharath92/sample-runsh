@@ -65,10 +65,7 @@ jobs:
     steps:
       - IN: simple-runsh
       - TASK:
-        - script: docker pull drydock/u14golall:master
-        - script: docker images | grep drydock/u14golall
-        - script: docker run $(docker images | grep drydock/u14golall | awk '{ print $3 }') cat /usr/bin/local/utility.sh
-        
+        - script: printenv
         
   - name: simple-runsh
     type: runSh
