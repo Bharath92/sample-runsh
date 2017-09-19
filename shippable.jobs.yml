@@ -65,7 +65,7 @@ jobs:
     steps:
       - IN: simple-runsh
       - TASK:
-        - script: printenv
+        - script: docker pull drydock/genexec:5.8.2
         
   - name: simple-runsh
     type: runSh
