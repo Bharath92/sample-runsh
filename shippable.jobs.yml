@@ -65,7 +65,7 @@ jobs:
     steps:
       - IN: simple-runsh
       - TASK:
-        - script: docker pull drydock/genexec:5.8.2
+        - script: docker pull drydockaarch64/microbase
         
   - name: simple-runsh
     type: runSh
