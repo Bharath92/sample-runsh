@@ -63,25 +63,15 @@ jobs:
   - name: sleep-5m
     type: runSh
     steps:
-      - IN: simple-runsh
+      #- IN: simple-runsh
       - TASK:
         - script: docker pull drydockaarch64/microbase
         
   - name: simple-runsh
     type: runSh
     steps:
-      - IN: dv-image
       - TASK:
-        - script: x=$(shipctl get_resource_version_key "dv-image" "versionName")
-        - script: echo $x | jq '.'
-        - script: x=$(shipctl get_resource_version_key dv-image "versionNumber")
-        - script: echo $x | jq '.'
-        - script: x=$(shipctl get_resource_version_key "dv-image" versionId)
-        - script: echo $x | jq '.'
-        - script: x=$(shipctl get_resource_version_key dv-image "env")
-        - script: echo $x | jq '.'
-        - script: x=$(shipctl get_resource_version_key dv-image sha)
-        - script: echo $x | jq '.'
+        - script: echo Finally!!!
         
   #- name: script-11
   #  type: runCLI
