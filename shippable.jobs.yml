@@ -71,7 +71,7 @@ jobs:
     type: runSh
     steps:
       - TASK:
-        - script: sleep 2m
+        - script: sleep 3m
         
   #- name: script-11
   #  type: runCLI
