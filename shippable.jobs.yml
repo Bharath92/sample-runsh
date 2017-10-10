@@ -72,6 +72,17 @@ jobs:
     steps:
       - TASK:
         - script: sleep 3m
+  - name: print-versions
+    type: runSh
+    steps:
+    - TASK:
+      - script: aws --version
+      - script: az --version
+      - script: terraform --version
+      - script: kubectl version || true
+      - script: gcloud --version
+      - script: eb --version
+      - script: packer --version
         
   #- name: script-11
   #  type: runCLI
