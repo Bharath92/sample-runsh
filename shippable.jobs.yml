@@ -108,7 +108,7 @@ jobs:
     steps:
     - IN: gke-config
     - TASK:
-      - script: echo kube
+      - script: echo kubectl
       - script: kubectl version
       - script: kubectl get namespaces
         
