@@ -92,6 +92,11 @@ resources:
   - name: gcr-config
     type: cliConfig
     integration: gcr
+  - name: gke-config
+    type: cliConfig
+    pointer:
+      cluster: cluster-test
+      region: us-central1-a
   #- name: quay-cli-config
   #  type: cliConfig
   #  integration: quay
