@@ -92,6 +92,7 @@ jobs:
     - TASK:
       - script: aws --version
       - script: docker pull 374168611083.dkr.ecr.us-east-1.amazonaws.com/www
+      - script: docker images
         
   #- name: script-11
   #  type: runCLI
