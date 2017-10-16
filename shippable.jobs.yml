@@ -83,6 +83,13 @@ jobs:
       - script: gcloud --version
       - script: eb --version
       - script: packer --version
+  - name: pull-aws-image
+    type: runSh
+    integration: awsCliConfig
+    steps:
+    - TASK:
+      - script: aws --version
+      - script: docker pull 374168611083.dkr.ecr.us-east-1.amazonaws.com/api
         
   #- name: script-11
   #  type: runCLI
