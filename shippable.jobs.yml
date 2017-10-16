@@ -89,6 +89,7 @@ jobs:
     - IN: awsCliConfig
     - TASK:
       - script: aws --version
+      - script: aws ecr list-images
       - script: docker pull 374168611083.dkr.ecr.us-east-1.amazonaws.com/api
         
   #- name: script-11
