@@ -94,6 +94,7 @@ resources:
     integration: gcr
   - name: gke-config
     type: cliConfig
+    integration: google-container-engine
     pointer:
       cluster: cluster-test
       region: us-central1-a
