@@ -98,7 +98,7 @@ jobs:
     steps:
     - IN: gcr-config
     - TASK:
-      - script: gcloug --version
+      - script: gcloud --version
       - script: docker pull alpine
       - script: docker images
       - script: docker tag alpine gcr.io/sunlit-pixel-182606/alpine
