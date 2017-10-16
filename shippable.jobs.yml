@@ -87,6 +87,8 @@ jobs:
     type: runSh
     steps:
     - IN: awsCliConfig
+      scopes:
+        - ecr
     - TASK:
       - script: aws --version
       - script: docker pull 374168611083.dkr.ecr.us-east-1.amazonaws.com/api
