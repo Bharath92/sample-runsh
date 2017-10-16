@@ -103,6 +103,13 @@ jobs:
       - script: docker images
       - script: docker tag alpine gcr.io/sunlit-pixel-182606/alpine
       - script: gcloud docker -- push gcr.io/sunlit-pixel-182606/alpine
+  - name: kube-test
+    type: runSh
+    steps:
+    - IN: gke-config
+    - TASK:
+      - script: kubectl --version
+      - script: kubectl get namespaces
         
   #- name: script-11
   #  type: runCLI
