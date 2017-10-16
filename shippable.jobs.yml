@@ -109,8 +109,8 @@ jobs:
     - IN: gke-config
     - TASK:
       - script: echo kube
-      - script: kubectl version --kubeconfig /etc/kubernetest/admin.conf
-      - script: kubectl get namespaces --kubeconfig /etc/kubernetest/admin.conf
+      - script: kubectl version --kubeconfig /etc/kubernetes/admin.conf
+      - script: kubectl get namespaces --kubeconfig /etc/kubernetes/admin.conf
         
   #- name: script-11
   #  type: runCLI
