@@ -96,7 +96,7 @@ resources:
     type: cliConfig
     integration: google-container-engine
     pointer:
-      sourceName: cluster-test
+      sourceName: "cluster-test"
       region: us-central1-a
   #- name: quay-cli-config
   #  type: cliConfig
