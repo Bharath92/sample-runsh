@@ -86,8 +86,8 @@ jobs:
   - name: pull-aws-image
     type: runSh
     steps:
+    - IN: awsCliConfig
     - TASK:
-      - IN: awsCliConfig
       - script: aws --version
       - script: docker pull 374168611083.dkr.ecr.us-east-1.amazonaws.com/api
         
