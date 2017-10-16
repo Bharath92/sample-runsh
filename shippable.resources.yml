@@ -84,11 +84,11 @@ resources:
   #- name: docker-cli-config
   #  type: cliConfig
   #  integration: docker
-  #- name: aws-cli-config
-  #  type: cliConfig
-  #  integration: aws
-  #  pointer:
-  #    region: us-east-1
+  - name: awsCliConfig
+    type: cliConfig
+    integration: aws-int
+    pointer:
+      region: us-east-1
   #- name: quay-cli-config
   #  type: cliConfig
   #  integration: quay
