@@ -89,7 +89,7 @@ jobs:
     - IN: awsCliConfig
     - TASK:
       - script: aws --version
-      - script: aws ecr list-images --repository-name 374168611083.dkr.ecr.us-east-1.amazonaws.com
+      - script: aws ecr list-images --registry-id 374168611083
       - script: docker pull 374168611083.dkr.ecr.us-east-1.amazonaws.com/api
         
   #- name: script-11
