@@ -111,6 +111,12 @@ jobs:
       - script: echo kubectl
       - script: kubectl version
       - script: kubectl get namespaces
+  - name: packer-test
+    type: runSh
+    steps:
+    - IN: shrivara-aws
+    - TASK:
+      - script: packer --version
         
   #- name: script-11
   #  type: runCLI
