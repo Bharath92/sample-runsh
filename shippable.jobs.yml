@@ -126,7 +126,7 @@ jobs:
       - script: echo $aws_secret_key
       - script: ls -la
       - script: echo "packer build -var 'aws_access_key=$aws_access_key' -var 'aws_secret_key=$aws_secret_key' packer-example.json"
-      - script: packer build -var 'aws_access_key=$aws_access_key' -var 'aws_secret_key=$aws_secret_key' packer-example.json
+      - script: packer build -var "aws_access_key=$aws_access_key" -var "aws_secret_key=$aws_secret_key" packer-example.json
       - script: popd
   #- name: script-11
   #  type: runCLI
