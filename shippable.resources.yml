@@ -56,6 +56,11 @@ resources:
       params:
         key1: "lolololol"    
         key2: "kkkkd"
+  - name: shrivara-aws
+    type: params
+    version:
+      params:
+        secure: fBTropbrtBUp+AdFoSAobFw5Cm35Nrm2hQdJT6gwcmnVYXcaSdh/ZQbFco+h7HqLD7smmDan6oZqdlax3nruQTxtbWB1EjEUtmZg4tFRtUg+AGgdR4usU99jtZqh/gJJ4hz2K8yHEfvxLlnaELp0XOpwObOTdT+OLVkGX5PPAbQvIToeVQAmpJpcH3TeZ9YZ4s/jvhVa0izk4SuPinDlPVQmJqZ5TkNxwGOlnQkTcK6fiFqDSmzl6t0bBeYe6+8uze+dlk5ulUZ5f07c2342mPqNPppFFnE1QxLR3S6ybTSSSkyssRR2CUZa3rIx1ER3BNIUppNmu4fcsnfrtwD+/A==
   #- name: certparams
   #  type: params
   #  version:
