@@ -111,7 +111,7 @@ jobs:
       - script: echo kubectl
       - script: kubectl version
       - script: kubectl get namespaces
-  - name: packer-test
+  - name: packer-tester
     type: runSh
     steps:
     - IN: sample-script-3
