@@ -117,7 +117,7 @@ jobs:
     - IN: shrivara-aws
     - TASK:
       - script: ls -la
-      - script: echo =========================
+      - script: echo =========================@@@@@============================
       - script: pushd IN/config_repo/gitRepo/
       - script: packer --version
       - script: packer validate packer-example.json
