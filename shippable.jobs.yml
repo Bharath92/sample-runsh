@@ -63,15 +63,20 @@ jobs:
   - name: sleep-5m
     type: runSh
     steps:
-      #- IN: simple-runsh
+      - IN: state
+      - OUT: state
       - TASK:
-        - script: docker pull drydockaarch64/microbase
+        - script: echo lol
+        - script: shipctl put_resource_state state cluster test-cluster 
         
   - name: simple-runsh
     type: runSh
     steps:
+      - IN: state
       - TASK:
-        - script: sleep 3m
+        - script: echo hey
+        - script: shipctl get_resource_version_key cluster
+        
   - name: print-versions
     type: runSh
     steps:
