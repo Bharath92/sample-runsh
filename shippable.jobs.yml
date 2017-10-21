@@ -75,7 +75,7 @@ jobs:
       - IN: state
       - TASK:
         - script: echo hey
-        - script: shipctl get_resource_version_key cluster
+        - script: shipctl get_resource_version_key state cluster
         
   - name: print-versions
     type: runSh
