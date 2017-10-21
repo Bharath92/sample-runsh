@@ -75,6 +75,8 @@ jobs:
       - IN: state
       - TASK:
         - script: echo hey
+        - script: x=$(get_resouce_meta STATE)
+        - script: cat $x/version.json
         - script: shipctl get_resource_version_key state cluster
         
   - name: print-versions
