@@ -90,6 +90,11 @@ jobs:
       - script: gcloud --version
       - script: eb --version
       - script: packer --version
+  - name: printenv
+    type: runSh
+    steps:
+    - TASK:
+      - script: printenv
   - name: pull-aws-image
     type: runSh
     steps:
