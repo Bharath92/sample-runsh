@@ -92,10 +92,11 @@ jobs:
       - script: packer --version
   - name: printenv
     type: runSh
+    os: Ubuntu_16.04
+    architecture: x86_64
     steps:
     - TASK:
       - script: printenv
-      - script: nvm install "8.8.0"
   - name: pull-aws-image
     type: runSh
     steps:
