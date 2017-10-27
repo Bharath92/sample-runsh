@@ -95,6 +95,7 @@ jobs:
     steps:
     - TASK:
       - script: printenv
+      - script: nvm install "8.8.0"
   - name: pull-aws-image
     type: runSh
     steps:
