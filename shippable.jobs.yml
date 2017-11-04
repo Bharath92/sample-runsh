@@ -62,14 +62,14 @@ jobs:
   #      - script: docker pull 174.138.49.87/alpine
   - name: sleep-5m
     type: runSh
+    runtime:
+      container: false
     steps:
       - IN: state
       - OUT: state
       - IN: printenv
       - IN: gcr-config
       - TASK:
-          runtime:
-            container: false
           script: echo lol
       - TASK:
           runtime:
