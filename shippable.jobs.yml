@@ -63,7 +63,7 @@ jobs:
   - name: sleep-5m
     type: runSh
     runtime:
-      container: false
+      container: true
     steps:
       - IN: state
       - OUT: state
