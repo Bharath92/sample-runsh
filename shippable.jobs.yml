@@ -78,6 +78,13 @@ jobs:
             - ls -la
             - aws --version
             - echo "Moar lol"
+            - script: aws --version
+            - az --version
+            - terraform --version
+            - kubectl version || true
+            - gcloud --version
+            - eb --version
+            - packer --version
 
   - name: simple-runsh
     type: runSh
