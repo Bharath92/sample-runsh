@@ -70,12 +70,12 @@ jobs:
       - IN: sample-script-3
       - TASK:
           script: echo lol
-       - TASK:
-          name: Cowsay
-          script: 
-            - sudo apt-get install cowsay
-            - echo "More lol"
-                     
+      - TASK:
+        name: Cowsay
+        script: 
+          - sudo apt-get install cowsay
+          - echo "More lol"
+
   - name: simple-runsh
     type: runSh
     steps:
