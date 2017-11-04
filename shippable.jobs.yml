@@ -71,6 +71,8 @@ jobs:
       - TASK:
           script: echo lol
       - TASK:
+          runtime:
+            container: true
           name: Cowsay
           script: 
             - ls -la
