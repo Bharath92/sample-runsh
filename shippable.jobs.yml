@@ -76,8 +76,8 @@ jobs:
           name: Cowsay
           script: 
             - ls -la
-            - echo "Moar lol"
             - aws --version
+            - echo "Moar lol"
 
   - name: simple-runsh
     type: runSh
