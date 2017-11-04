@@ -69,9 +69,13 @@ jobs:
       - IN: gcr-config
       - IN: sample-script-3
       - TASK:
-        - script: echo lol
-        - script: shipctl put_resource_state state cluster test-cluster 
-        
+          script: echo lol
+       - TASK:
+          name: Cowsay
+          script: 
+            - sudo apt-get install cowsay
+            - echo "More lol"
+                     
   - name: simple-runsh
     type: runSh
     steps:
