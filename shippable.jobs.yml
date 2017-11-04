@@ -73,8 +73,8 @@ jobs:
       - TASK:
           name: Cowsay
           script: 
-            - sudo apt-get install cowsay
-            - echo "More lol"
+            - ls -la
+            - echo "Moar lol"
 
   - name: simple-runsh
     type: runSh
