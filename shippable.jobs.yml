@@ -68,6 +68,15 @@ jobs:
       - IN: printenv
       - IN: gcr-config
       - TASK:
+          runtime:
+            container: false
+          script: echo lol
+      - TASK:
+          runtime:
+            container: true
+            options:
+              imageName: u14
+              imageTag: latest
           script: echo lol
       - TASK:
           runtime:
