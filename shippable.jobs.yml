@@ -67,7 +67,6 @@ jobs:
       - OUT: state
       - IN: printenv
       - IN: gcr-config
-      - IN: sample-script-3
       - TASK:
           script: echo lol
       - TASK:
