@@ -89,6 +89,7 @@ jobs:
             - aws --version
             - az --version
             - terraform --version
+            - sl || echo lol
             
   - name: simple-runsh
     type: runSh
