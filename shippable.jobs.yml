@@ -95,8 +95,7 @@ jobs:
     steps:
       - IN: state
       - TASK:
-        - script: >
-            curl http://google.com
+        - script: curl http://google.com
   - name: simple-runsh
     type: runSh
     steps:
