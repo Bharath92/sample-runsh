@@ -91,7 +91,7 @@ jobs:
             - echo "Moar lol"
             - aws --version
             - az --version
-            - terraform --version
+            - sl
   - name: check-curl
     type: runSh
     steps:
