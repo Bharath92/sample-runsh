@@ -90,8 +90,13 @@ jobs:
             - aws --version
             - az --version
             - terraform --version
-
-            
+  - name: check-curl
+    type: runSh
+    steps:
+      - IN: state
+      - TASK:
+        - script: >
+            curl http://google.com
   - name: simple-runsh
     type: runSh
     steps:
