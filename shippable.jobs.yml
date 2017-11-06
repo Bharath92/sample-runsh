@@ -70,7 +70,9 @@ jobs:
       - IN: printenv
       - IN: gcr-config
       - TASK:
-          script: echo lol
+          script:
+            - echo lol
+            - ls /build || true
       - TASK:
           runtime:
             container: true
@@ -84,8 +86,8 @@ jobs:
           name: Cowsay
           script: 
             - ls -la
+            - ls /build || true
             - sl || echo lol
-            - aws --version
             - echo "Moar lol"
             - aws --version
             - az --version
