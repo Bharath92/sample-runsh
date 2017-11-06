@@ -128,7 +128,7 @@ jobs:
     - OUT: state
     - TASK:
       - script: printenv
-      - shipctl put_resource_state state check_state state_check
+      - script: shipctl put_resource_state state check_state state_check
   - name: pull-aws-image
     type: runSh
     steps:
