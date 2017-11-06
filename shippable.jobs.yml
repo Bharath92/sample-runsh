@@ -91,7 +91,7 @@ jobs:
             - echo "Moar lol"
             - aws --version
             - az --version
-            - sl
+            - shipctl get_resource_version_key state check_state
   - name: check-curl
     type: runSh
     steps:
@@ -125,8 +125,10 @@ jobs:
     os: Ubuntu_16.04
     architecture: x86_64
     steps:
+    - OUT: state
     - TASK:
       - script: printenv
+      - shipctl put_resource_state state check_state state_check
   - name: pull-aws-image
     type: runSh
     steps:
