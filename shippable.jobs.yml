@@ -84,12 +84,13 @@ jobs:
           name: Cowsay
           script: 
             - ls -la
+            - sl || echo lol
             - aws --version
             - echo "Moar lol"
             - aws --version
             - az --version
             - terraform --version
-            - sl || echo lol
+
             
   - name: simple-runsh
     type: runSh
