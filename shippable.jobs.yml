@@ -105,6 +105,7 @@ jobs:
     os: Ubuntu_16.04
     architecture: x86_64
     steps:
+    - IN: myParams1
     - OUT: state
     - TASK:
       - script: printenv
