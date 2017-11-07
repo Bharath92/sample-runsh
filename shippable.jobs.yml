@@ -63,14 +63,14 @@ jobs:
   - name: sleep-5m
     type: runSh
     runtime:
-      container: false
+      container: true
     steps:
       - IN: state
       - OUT: state
       - IN: printenv
       - TASK:
           - script: echo lol
-          - script: ls /build || true
+          - script: ls /build
           - script: echo lulz
   - name: simple-curl
     type: runSh
