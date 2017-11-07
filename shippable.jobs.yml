@@ -69,8 +69,8 @@ jobs:
       - OUT: state
       - IN: printenv
       - TASK:
-          - script: echo lol
-          - script: ls /build
+          - script: echo lold
+          - script: ls /builddd
           - script: echo lulz
   - name: simple-curl
     type: runSh
