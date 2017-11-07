@@ -68,7 +68,6 @@ jobs:
       - IN: state
       - OUT: state
       - IN: printenv
-      - IN: gcr-config
       - TASK:
           - script: echo lol
           - script: ls /build || true
