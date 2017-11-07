@@ -73,6 +73,7 @@ jobs:
           script:
             - echo lol
             - ls /build || true
+  - name: simple-curl
     type: runSh
     steps:
       - IN: state
