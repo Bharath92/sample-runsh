@@ -71,7 +71,7 @@ jobs:
       - TASK:
           - script: echo lol
           - script: ls /build || true
-          - script: cat $BUILD_DIR/state/sleep-5m.env
+          - script: cat $JOB_DIR/state/sleep-5m.env
   - name: simple-curl
     type: runSh
     steps:
