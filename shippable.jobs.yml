@@ -70,9 +70,8 @@ jobs:
       - IN: printenv
       - IN: gcr-config
       - TASK:
-          script:
-            - echo lol
-            - ls /build || true
+          - script: echo lol
+          - script: ls /build || true
   - name: simple-curl
     type: runSh
     steps:
