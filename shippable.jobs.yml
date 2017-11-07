@@ -73,26 +73,6 @@ jobs:
           script:
             - echo lol
             - ls /build || true
-      - TASK:
-          runtime:
-            container: true
-            options:
-              imageName: u14
-              imageTag: latest
-          script: echo lol
-      - TASK:
-          runtime:
-            container: true
-          name: Cowsay
-          script: 
-            - ls -la
-            - ls /build || true
-            - sl || echo lol
-            - echo "Moar lol"
-            - aws --version
-            - az --version
-            - shipctl get_resource_version_key state check_state
-  - name: check-curl
     type: runSh
     steps:
       - IN: state
