@@ -69,9 +69,14 @@ jobs:
       - OUT: state
       - IN: printenv
       - TASK:
-          - script: echo lold
-          - script: ls /builddd
-          - script: echo lulz
+          name: pull stuff while booting up
+          options:
+            imageName: drydock/u14nodall
+            imageTag: master
+          script: 
+            - echo lold
+            - ls /build
+            - echo lulz
   - name: simple-curl
     type: runSh
     steps:
