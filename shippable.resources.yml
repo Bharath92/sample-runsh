@@ -79,7 +79,8 @@ resources:
     type: params                                #required
     version:
       params:
-        apiUrl: "https://rcapi.shippable.com"    
+        apiUrl: "https://rcapi.shippable.com"
+        secure: eD1QtfKFRP5s6M9s02D2iiZoD+vZX0hfPLtt+eypKUaNbo28rto4FrjNLrVQHMzLPvQw4kpyXW7hlUn4HpVZxNmeji5jjx5g/MC64L4k5v5lsa6ZrJrou3aa495D6A+2o92Y2mC+hXlGQs8l7w3fsomLZqDy3qDAfHwZQDbkY6vZBljgF/66aa9Jf5QCbUwi+KVrj2ltw9H/UwJxmyCQToSrDAn2zQcZSSH1TQeM+cd1TO+dgt+crEGkrihsNi2s/jZ4zAKu92f4by+UT+K/Q8HWFHyryCLJQSBchTAXa9S1n4UsZLxg2f5cMmb9vsw8LNNqDW2pJ5Oyvf9NK8hVEA==
         
   - name: rc_api_params
     type: params                                #required
