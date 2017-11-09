@@ -70,9 +70,13 @@ jobs:
       - IN: printenv
       - TASK:
           name: pull stuff while booting up
-          options:
-            imageName: drydock/u14nodall
-            imageTag: master
+          runtime:
+            options:
+              imageName: drydock/u14nodall
+              imageTag: master
+              env:
+                foo: bar
+                boo: baz
           script: 
             - echo lold
             - ls /build
