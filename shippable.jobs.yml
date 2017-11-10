@@ -77,7 +77,7 @@ jobs:
               env:
                 - foo: bar
                   boo: baz
-                - boo: far
+                - zoo: far
           script: 
             - printenv
             - echo lold
@@ -86,11 +86,12 @@ jobs:
       - TASK:
           name: run on host
           runtime:
+            container: false
             options:
               env:
-                - foo: bar
-                  boo: baz
-                - boo: far
+                foo: bar
+                boo: baz
+                boo: far
           script: 
             - printenv
             - echo lulz
