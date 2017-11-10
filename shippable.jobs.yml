@@ -79,8 +79,20 @@ jobs:
                   boo: baz
                 - boo: far
           script: 
+            - printenv
             - echo lold
             - ls /build
+            - echo lulz
+      - TASK:
+          name: run on host
+          runtime:
+            options:
+              env:
+                - foo: bar
+                  boo: baz
+                - boo: far
+          script: 
+            - printenv
             - echo lulz
   - name: simple-curl
     type: runSh
