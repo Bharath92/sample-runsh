@@ -82,7 +82,7 @@ jobs:
                 - too: mar
                 - foo: lol
           script: 
-            - printenv
+            - sleep 10
             - echo lolddd
             - ls /build || true
             - echo lulz
