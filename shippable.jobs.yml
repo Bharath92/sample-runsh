@@ -95,7 +95,6 @@ jobs:
                 foo: bar
                 boo: baz
                 zoo: far
-                foo: lol
                 koo: tar
           script: 
             - printenv
