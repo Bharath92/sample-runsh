@@ -80,7 +80,7 @@ jobs:
                 - zoo: far
           script: 
             - printenv
-            - echo lold
+            - echo lolddd
             - ls /build || true
             - echo lulz
       - TASK:
@@ -91,11 +91,11 @@ jobs:
               env:
                 foo: bar
                 boo: baz
-                boo: far
+                zoo: far
           script: 
             - printenv
             - ls /build || true
-            - echo lulz
+            - echo lulzddd
   - name: simple-curl
     type: runSh
     steps:
