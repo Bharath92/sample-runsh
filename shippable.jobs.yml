@@ -69,11 +69,12 @@ jobs:
       - OUT: state
       - IN: printenv
       - TASK:
-          name: pull stuff while booting up
+          name: no pull boiz
           runtime:
             options:
               imageName: drydock/u14phpall
               imageTag: master
+              pull: false
               env:
                 - foo: bar
                   boo: baz
@@ -82,6 +83,25 @@ jobs:
                 - too: mar
                 - foo: lol
               options: "-m 500m"
+          script: 
+            - sleep 10
+            - echo lolddd
+            - ls /build || true
+            - echo lulz
+      - TASK:
+          name: pull stuff while booting up
+          runtime:
+            options:
+              imageName: drydock/u14phpall
+              imageTag: master
+              pull: true
+              env:
+                - foo: bar
+                  boo: baz
+                - zoo: far
+                - koo: tar
+                - too: mar
+                - foo: lol
           script: 
             - sleep 10
             - echo lolddd
