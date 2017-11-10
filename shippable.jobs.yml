@@ -81,6 +81,7 @@ jobs:
                 - koo: tar
                 - too: mar
                 - foo: lol
+              options: "-m 500m"
           script: 
             - sleep 10
             - echo lolddd
