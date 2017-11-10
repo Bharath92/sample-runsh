@@ -81,7 +81,7 @@ jobs:
           script: 
             - printenv
             - echo lold
-            - ls /build
+            - ls /build || true
             - echo lulz
       - TASK:
           name: run on host
@@ -94,6 +94,7 @@ jobs:
                 boo: far
           script: 
             - printenv
+            - ls /build || true
             - echo lulz
   - name: simple-curl
     type: runSh
