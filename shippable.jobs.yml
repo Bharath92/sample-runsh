@@ -72,7 +72,7 @@ jobs:
           name: pull stuff while booting up
           runtime:
             options:
-              imageName: drydock/u14nodall
+              imageName: drydock/u14phpall
               imageTag: master
               env:
                 - foo: bar
