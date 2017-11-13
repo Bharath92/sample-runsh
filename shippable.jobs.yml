@@ -68,8 +68,7 @@ jobs:
       - IN: state
       - OUT: state
       - IN: printenv
-      - IN: docker_reg_config
-      - IN: google_cloud_config
+      - IN: awsCliConfig
       - TASK:
           name: no pull boiz
           runtime:
@@ -90,6 +89,7 @@ jobs:
             - echo lolddd
             - ls /build || true
             - echo lulz
+            - docker pull 374168611083.dkr.ecr.us-east-1.amazonaws.com/api
       - TASK:
           name: pull stuff while booting up
           runtime:
