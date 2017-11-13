@@ -109,6 +109,9 @@ resources:
   - name: docker_reg_config
     type: cliConfig
     integration: docker_reg
+  - name: google_cloud_config
+    type: cliConfig
+    integration: google_cloud
   #- name: quay-cli-config
   #  type: cliConfig
   #  integration: quay
