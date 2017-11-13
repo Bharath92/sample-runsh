@@ -68,7 +68,7 @@ jobs:
       - IN: state
       - OUT: state
       - IN: printenv
-      - IN: docker_login_config
+      - IN: docker_reg_config
         scopes:
         - ecr
       - TASK:
