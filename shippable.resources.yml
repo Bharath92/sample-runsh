@@ -106,6 +106,9 @@ resources:
     pointer:
       clusterName: "cluster-test"
       region: us-central1-a
+  - name: docker_reg_config
+    type: cliConfig
+    integration: docker_reg
   #- name: quay-cli-config
   #  type: cliConfig
   #  integration: quay
