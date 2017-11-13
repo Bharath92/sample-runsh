@@ -68,7 +68,7 @@ jobs:
       - IN: state
       - OUT: state
       - IN: printenv
-      - IN: awsCliConfig
+      - IN: docker_login_config
         scopes:
         - ecr
       - TASK:
@@ -87,44 +87,8 @@ jobs:
                 - foo: lol
               options: "-m 500m"
           script: 
-            - sleep 10
-            - echo lolddd
-            - ls /build || true
-            - echo lulz
-            - docker pull 374168611083.dkr.ecr.us-east-1.amazonaws.com/api
-      - TASK:
-          name: pull stuff while booting up
-          runtime:
-            options:
-              imageName: drydock/u14phpall
-              imageTag: master
-              pull: true
-              env:
-                - foo: bar
-                  boo: baz
-                - zoo: far
-                - koo: tar
-                - too: mar
-                - foo: lol
-          script: 
-            - sleep 10
-            - echo lolddd
-            - ls /build || true
-            - echo lulz
-      - TASK:
-          name: run on host
-          runtime:
-            container: false
-            options:
-              env:
-                foo: bar
-                boo: baz
-                zoo: far
-                koo: tar
-          script: 
-            - printenv
-            - ls /build || true
-            - echo lulzddd
+            - docker pull bharath92/gitissues
+      
   - name: simple-curl
     type: runSh
     steps:
