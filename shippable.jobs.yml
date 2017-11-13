@@ -68,6 +68,7 @@ jobs:
       - IN: state
       - OUT: state
       - IN: printenv
+      - IN: docker_reg_config
       - TASK:
           name: no pull boiz
           runtime:
