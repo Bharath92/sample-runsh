@@ -74,6 +74,7 @@ jobs:
           name: no pull boiz
           script: 
             - echo r
+            - shipctl get_resource_version_key state cluster
       
   - name: simple-curl
     type: runSh
