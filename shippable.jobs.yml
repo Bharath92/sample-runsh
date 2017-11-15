@@ -76,7 +76,7 @@ jobs:
           script: 
             - echo r
             - shipctl get_resource_version_key state cluster
-            - date_now=$(date)
+            - date_now=$(date -Iseconds)
             - shipctl put_resource_state state cluster "$date_now"
             - docker pull bharath92/gitissues
             - xyz || true
