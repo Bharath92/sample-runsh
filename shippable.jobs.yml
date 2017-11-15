@@ -133,6 +133,13 @@ jobs:
       - script: aws --version
       - script: docker pull 374168611083.dkr.ecr.us-east-1.amazonaws.com/www
       - script: docker images
+  - name: pull-docker-image
+    type: runSh
+    steps:
+    - IN: docker_reg_config
+    - TASK:
+      - script: docker pull bharath92/gitissues
+      - script: docker images
   - name: push-gcr-image
     type: runSh
     steps:
