@@ -69,6 +69,8 @@ jobs:
       - OUT: state
       - IN: printenv
       - IN: awsCliConfig
+        scopes:
+        - ecr
       - TASK:
           name: no pull boiz
           runtime:
