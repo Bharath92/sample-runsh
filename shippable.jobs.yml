@@ -70,11 +70,16 @@ jobs:
       - IN: state
       - OUT: state
       - IN: printenv
+      - IN: docker_reg_config
       - TASK:
           name: no pull boiz
           script: 
             - echo r
             - shipctl get_resource_version_key state cluster
+            - date_now=$(date)
+            - shipctl put_resource_state state cluster $date_now
+            - docker pull bharath92/gitissues
+            - xyz || true
       
   - name: simple-curl
     type: runSh
