@@ -68,7 +68,7 @@ jobs:
       - IN: state
       - OUT: state
       - IN: printenv
-      - IN: docker_reg_config
+      - IN: awsCliConfig
       - TASK:
           name: no pull boiz
           runtime:
@@ -85,7 +85,7 @@ jobs:
                 - foo: lol
               options: "-m 500m"
           script: 
-            - docker pull bharath92/gitissues
+            - docker pull 374168611083.dkr.ecr.us-east-1.amazonaws.com/api:master
       
   - name: simple-curl
     type: runSh
