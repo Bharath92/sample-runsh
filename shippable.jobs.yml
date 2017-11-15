@@ -68,9 +68,6 @@ jobs:
       - IN: state
       - OUT: state
       - IN: printenv
-      - IN: awsCliConfig
-        scopes:
-        - ecr
       - TASK:
           name: no pull boiz
           runtime:
@@ -85,9 +82,8 @@ jobs:
                 - koo: tar
                 - too: mar
                 - foo: lol
-              options: "-m 500m"
           script: 
-            - docker pull 374168611083.dkr.ecr.us-east-1.amazonaws.com/api:master
+            - echo r
       
   - name: simple-curl
     type: runSh
