@@ -64,24 +64,13 @@ jobs:
     type: runSh
     runtime:
       container: true
+      architecture: aarch64
     steps:
       - IN: state
       - OUT: state
       - IN: printenv
       - TASK:
           name: no pull boiz
-          runtime:
-            options:
-              imageName: drydock/u14phpall
-              imageTag: master
-              pull: false
-              env:
-                - foo: bar
-                  boo: baz
-                - zoo: far
-                - koo: tar
-                - too: mar
-                - foo: lol
           script: 
             - echo r
       
