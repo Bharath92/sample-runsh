@@ -64,8 +64,6 @@ jobs:
     type: runSh
     runtime:
       container: true
-      architecture: aarch64
-      os: Ubuntu_16.04
     steps:
       - IN: state
       - OUT: state
