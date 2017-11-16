@@ -64,6 +64,8 @@ jobs:
     type: runSh
     runtime:
       container: true
+      options:
+        pull: false
     steps:
       - IN: state
       - OUT: state
