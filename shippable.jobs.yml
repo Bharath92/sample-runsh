@@ -78,6 +78,7 @@ jobs:
             - date_now=$(date -Iseconds)
             - shipctl put_resource_state state cluster "$date_now"
             - ls /build || true
+            - printenv
       - TASK:
           name: on host
           runtime:
@@ -85,6 +86,7 @@ jobs:
           script: 
             - echo lol
             - ls /build || true
+            - printenv
 
   - name: simple-curl
     type: runSh
