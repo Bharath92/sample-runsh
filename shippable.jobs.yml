@@ -81,41 +81,41 @@ jobs:
             - ls /build || true
             - printenv
             - ls $BUILD_DIR/previousState
-            - ls $BUILD_DIR/scripts
-      - TASK:
-          name: on host
-          runtime:
-            container: false
-          script: 
-            - echo lol
-            - ls /build || true
-            - printenv
-      - TASK:
-          name: adding container task envs
-          runtime:
-            options:
-              env:
-                task: third
-                env2: lol
-          script: 
-            - echo r
-            - shipctl get_resource_version_key state cluster
-            - date_now=$(date -Iseconds)
-            - shipctl put_resource_state state cluster "$date_now"
-            - ls /build || true
-            - printenv
-      - TASK:
-          name: on host the 2nd time
-          runtime:
-            container: false
-            options:
-              env:
-                task: host
-                env3: lol
-          script: 
-            - echo lol
-            - ls /build || true
-            - printenv
+            - ls $BUILD_DIR/scri
+      #- TASK:
+      #    name: on host
+      #    runtime:
+      #      container: false
+      #    script: 
+      #      - echo lol
+      #      - ls /build || true
+      #      - printenv
+      #- TASK:
+      #    name: adding container task envs
+      #    runtime:
+      #      options:
+      #        env:
+      #          task: third
+      #          env2: lol
+      #    script: 
+      #      - echo r
+      #      - shipctl get_resource_version_key state cluster
+      #      - date_now=$(date -Iseconds)
+      #      - shipctl put_resource_state state cluster "$date_now"
+      #      - ls /build || true
+      #      - printenv
+      #- TASK:
+      #    name: on host the 2nd time
+      #    runtime:
+      #      container: false
+      #      options:
+      #        env:
+      #          task: host
+      #          env3: lol
+      #    script: 
+      #      - echo lol
+      #      - ls /build || true
+      #      - printenv
 
   - name: simple-curl
     type: runSh
