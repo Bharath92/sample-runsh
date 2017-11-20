@@ -79,7 +79,7 @@ jobs:
             - date_now=$(date -Iseconds)
             - shipctl put_resource_state state cluster "$date_now"
             - ls /build || true
-            - printenvd
+            - printenv
             - ls $BUILD_DIR/previousState
       #- TASK:
       #    name: on host
