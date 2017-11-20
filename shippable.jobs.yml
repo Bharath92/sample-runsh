@@ -69,6 +69,7 @@ jobs:
     steps:
       - IN: state
       - OUT: state
+      - IN: sample-script-3
       - IN: printenv
       - TASK:
           name: no pull boiz
