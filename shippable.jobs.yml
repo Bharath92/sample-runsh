@@ -79,6 +79,7 @@ jobs:
             - shipctl put_resource_state state cluster "$date_now"
             - ls /build || true
             - printenv
+            - xyz
       - TASK:
           name: on host
           runtime:
