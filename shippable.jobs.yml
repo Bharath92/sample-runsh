@@ -81,7 +81,6 @@ jobs:
             - ls /build || true
             - printenv
             - ls $BUILD_DIR/status
-            - cat $BUILD_DIR/status/job.steps.json
             - ls $BUILD_DIR/scripts
       - TASK:
           name: on host
