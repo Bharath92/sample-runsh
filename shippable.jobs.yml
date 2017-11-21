@@ -70,6 +70,7 @@ jobs:
       - IN: state
       - OUT: state
       - IN: sample-script-3
+      - OUT: sampleGol_ciRepo
       - IN: printenv
       - TASK:
           name: no pull boiz
