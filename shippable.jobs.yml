@@ -69,7 +69,7 @@ jobs:
     steps:
       - IN: state
       - OUT: state
-      - OUT: sampleGol-ciRepo
+      - OUT: sampleNod-ciRepo
       - IN: sample-script-3
       - IN: printenv
       - TASK:
