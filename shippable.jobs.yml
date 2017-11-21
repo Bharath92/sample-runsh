@@ -284,6 +284,5 @@ jobs:
   - name: sampleGol_runCI
     type: runCI
     steps:
-      - IN: sleep-5m
       - IN: sampleGol_ciRepo
   
