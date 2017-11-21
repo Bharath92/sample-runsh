@@ -69,7 +69,6 @@ jobs:
     steps:
       - IN: state
       - OUT: state
-      - OUT: sampleGol-runCI
       - IN: sample-script-3
       - IN: printenv
       - TASK:
@@ -284,5 +283,6 @@ jobs:
   - name: sampleGol_runCI
     type: runCI
     steps:
+      - IN: sleep-5m
       - IN: sampleGol_ciRepo
   
