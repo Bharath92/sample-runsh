@@ -62,9 +62,9 @@ jobs:
   #      - script: docker pull 174.138.49.87/alpine
   - name: sleep-5m
     type: runSh
-    os: Ubuntu_14.04
-    architecture: x86_64
     runtime:
+      os: Ubuntu_14.04
+      architecture: x86_64
       container: true
       options:
         pull: false
