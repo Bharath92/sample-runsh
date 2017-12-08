@@ -147,7 +147,7 @@ jobs:
       - script: packer --version
   - name: printenv
     type: runSh
-    os: Ubuntu_16.04
+    os: Ubuntu_14.04
     architecture: x86_64
     steps:
     - IN: myParams1
