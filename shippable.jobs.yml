@@ -129,7 +129,7 @@ jobs:
     steps:
       - TASK:
         - script: |
-            xyz
+            exit 100
   - name: simple-runsh
     type: runSh
     steps:
