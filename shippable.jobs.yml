@@ -63,8 +63,6 @@ jobs:
   - name: sleep-5m
     type: runSh
     runtime:
-      os: Ubuntu_14.04
-      architecture: x86_64
       container: true
       options:
         pull: false
