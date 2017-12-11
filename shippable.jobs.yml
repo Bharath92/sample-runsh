@@ -124,6 +124,12 @@ jobs:
       - TASK:
         - script: >
             curl -H "Content-Type: application/json" https://api.shippable.com
+  - name: pipe-error
+    type: runSh
+    steps:
+      - TASK:
+        - script: |
+            xyz
   - name: simple-runsh
     type: runSh
     steps:
