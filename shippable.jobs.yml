@@ -128,7 +128,7 @@ jobs:
     type: runSh
     steps:
       - TASK:
-        - script: sl
+        - script: exit 1
   - name: simple-runsh
     type: runSh
     steps:
