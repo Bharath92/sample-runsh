@@ -131,7 +131,7 @@ jobs:
         - script: |
             pushd /tmp
               echo lol
-              exit 100
+              abc
             popd
   - name: simple-runsh
     type: runSh
