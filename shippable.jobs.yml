@@ -128,12 +128,7 @@ jobs:
     type: runSh
     steps:
       - TASK:
-        - script: |
-            pushd /tmp
-              echo lol
-              abc
-              echo $?
-            popd
+        - script: sl
   - name: simple-runsh
     type: runSh
     steps:
