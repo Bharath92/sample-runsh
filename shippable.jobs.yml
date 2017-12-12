@@ -132,6 +132,7 @@ jobs:
             pushd /tmp
               echo lol
               abc
+              echo $?
             popd
   - name: simple-runsh
     type: runSh
