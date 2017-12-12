@@ -129,7 +129,10 @@ jobs:
     steps:
       - TASK:
         - script: |
-            exit 100
+            pushd /tmp
+              echo lol
+              exit 100
+            popd
   - name: simple-runsh
     type: runSh
     steps:
