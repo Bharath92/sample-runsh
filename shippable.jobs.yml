@@ -82,14 +82,14 @@ jobs:
             - ls /build || true
             - printenv
             - ls $BUILD_DIR/previousState
-      #- TASK:
-      #    name: on host
-      #    runtime:
-      #      container: false
-      #    script: 
-      #      - echo lol
-      #      - ls /build || true
-      #      - printenv
+      - TASK:
+          name: on host
+          runtime:
+            container: false
+          script: 
+            - echo lol
+            - ls /build || true
+            - printenv
       #- TASK:
       #    name: adding container task envs
       #    runtime:
@@ -132,6 +132,11 @@ jobs:
             echo hi
             abc
             echo bye
+  - name: exit-0
+    type: runSh
+    steps:
+      - TASK:
+        - script: exit 0
   - name: simple-runsh
     type: runSh
     steps:
