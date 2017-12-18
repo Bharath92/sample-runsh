@@ -145,6 +145,21 @@ jobs:
     steps:
       - TASK:
         - script: exit 0
+  - name: testing-stuff
+    type: runSh
+    steps:
+      - TASK:
+        - script: ls
+      - TASK:
+        - script:
+          - ls
+          - pwd
+      - TASK:
+        - script: |
+            ls
+            echo foo
+      - TASK:
+        - script: sl
   - name: simple-runsh
     type: runSh
     steps:
