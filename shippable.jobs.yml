@@ -147,19 +147,25 @@ jobs:
         - script: exit 0
   - name: testing-stuff
     type: runSh
+    runtime:
+      container: true
     steps:
       - TASK:
-        - script: ls
+          name: ls
+          script: ls
       - TASK:
-        - script:
+          name: ls, pwd
+          script:
           - ls
           - pwd
       - TASK:
-        - script: |
+          name: ls, foo
+          script: |
             ls
             echo foo
       - TASK:
-        - script: sl
+          name: sl
+          script: sl
   - name: simple-runsh
     type: runSh
     steps:
