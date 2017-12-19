@@ -77,27 +77,27 @@ jobs:
       #    script: 
       #      - exit 0
       - TASK:
-          name: return 1
+          name: ls
           script: 
-            - sl
-      - TASK:
-          name: no pull boiz
-          script: 
-            - echo r
-            - shipctl get_resource_version_key state cluster
-            - date_now=$(date -Iseconds)
-            - shipctl put_resource_state state cluster "$date_now"
-            - ls /build || true
-            - printenv
-            - ls $BUILD_DIR/previousState
-      - TASK:
-          name: on host
-          runtime:
-            container: false
-          script: 
-            - echo lol
-            - ls /build || true
-            - printenv
+            - ls
+      #- TASK:
+      #    name: no pull boiz
+      #    script: 
+      #      - echo r
+      #      - shipctl get_resource_version_key state cluster
+      #      - date_now=$(date -Iseconds)
+      #      - shipctl put_resource_state state cluster "$date_now"
+      #      - ls /build || true
+      #      - printenv
+      #      - ls $BUILD_DIR/previousState
+      #- TASK:
+      #    name: on host
+      #    runtime:
+      #      container: false
+      #    script: 
+      #      - echo lol
+      #      - ls /build || true
+      #      - printenv
       - TASK:
           name: multi-linz-yall
           runtime:
