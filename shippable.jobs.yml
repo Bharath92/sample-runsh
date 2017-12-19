@@ -99,6 +99,14 @@ jobs:
             - echo lol
             - ls /build || true
             - printenv
+      - TASK:
+          name: multi-linz-yall
+          runtime:
+            container: true
+          script: |
+            echo line1
+            echo line2
+            echo line3
     on_success:
       - script: echo "success :)"
     on_failure:
