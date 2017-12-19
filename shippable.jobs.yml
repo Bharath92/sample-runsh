@@ -73,10 +73,9 @@ jobs:
       - OUT: sampleGol_ciRepo
       - IN: printenv
       - TASK:
-          name: exporter
+          name: exit 0
           script: 
-            - export         x=123
-            - echo  "lol"        $x
+            - exit 0
       - TASK:
           name: return 0
           script: 
