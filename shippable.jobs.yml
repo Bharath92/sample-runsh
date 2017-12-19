@@ -95,7 +95,7 @@ jobs:
           runtime:
             container: false
           script: 
-            - lol
+            - echo lol
             - ls /build || true
             - printenv
       - TASK:
