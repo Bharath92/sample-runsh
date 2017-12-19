@@ -75,7 +75,7 @@ jobs:
       - TASK:
           name: exit 0
           script: 
-            - sl
+            - exit 0
       - TASK:
           name: return 0
           script: 
