@@ -98,12 +98,12 @@ jobs:
             - echo lol
             - ls /build || true
             - printenv
-      on_success:
-        - script: echo "success :)"
-      on_failure:
-        - script: echo "failure :("
-      always:
-        - script: echo "always :|"
+    on_success:
+      - script: echo "success :)"
+    on_failure:
+      - script: echo "failure :("
+    always:
+      - script: echo "always :|"
       #- TASK:
       #    name: adding container task envs
       #    runtime:
