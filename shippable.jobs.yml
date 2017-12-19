@@ -73,13 +73,13 @@ jobs:
       - OUT: sampleGol_ciRepo
       - IN: printenv
       - TASK:
-          name: exit 1
+          name: exit 0
           script: 
-            - exit 1
+            - exit 0
       - TASK:
-          name: return 0
+          name: return 1
           script: 
-            - return 0
+            - return 1
       - TASK:
           name: no pull boiz
           script: 
@@ -104,7 +104,7 @@ jobs:
             container: true
           script: |
             echo line1
-            ls
+            sl
             echo line3
     on_success:
       - script: echo "success :)"
