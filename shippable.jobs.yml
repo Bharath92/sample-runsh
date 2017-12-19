@@ -72,10 +72,10 @@ jobs:
       - IN: sample-script-3
       - OUT: sampleGol_ciRepo
       - IN: printenv
-      - TASK:
-          name: exit 0
-          script: 
-            - exit 0
+      #- TASK:
+      #    name: exit 0
+      #    script: 
+      #      - exit 0
       - TASK:
           name: return 1
           script: 
