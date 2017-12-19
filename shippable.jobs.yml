@@ -75,8 +75,8 @@ jobs:
       - TASK:
           name: exporter
           script: 
-            - export x=123
-            - echo $x
+            - export         x=123
+            - echo  "lol"        $x
       - TASK:
           name: return 0
           script: 
