@@ -104,11 +104,11 @@ jobs:
             container: true
           script: |
             echo line1
-            sl
+            ls
             echo line3
     on_success:
       - script: echo "success :)"
-      - script: ls
+      - script: sl
       - script: echo lol
     on_failure:
       - script: echo "failure :("
