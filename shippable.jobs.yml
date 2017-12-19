@@ -76,10 +76,10 @@ jobs:
       #    name: exit 0
       #    script: 
       #      - exit 0
-      - TASK:
-          name: return 1
-          script: 
-            - return 1
+      #- TASK:
+      #    name: return 1
+      #    script: 
+      #      - return 1
       - TASK:
           name: no pull boiz
           script: 
