@@ -108,7 +108,7 @@ jobs:
             echo line3
     on_success:
       - script: echo "success :)"
-      - script: sl
+      - script: ls
       - script: echo lol
     on_failure:
       - script: echo "failure :("
