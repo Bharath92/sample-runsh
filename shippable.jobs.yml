@@ -93,9 +93,12 @@ jobs:
       #    script: 
       #      - exit 0
       - TASK:
-          name: pwd
-          script: 
-            - pwd
+          name: pwd-multi
+          script: |
+            pwd
+            echo lol
+            sl
+            echo lol
       - TASK:
           name: no pull boiz
           script: 
