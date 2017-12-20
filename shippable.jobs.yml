@@ -60,6 +60,19 @@ jobs:
   #    - IN: pdr-cli-config
   #    - TASK:
   #      - script: docker pull 174.138.49.87/alpine
+  - name: mac
+    type: runSh
+    runtime:
+      architecture: x86_64
+      os: macOS_10.12
+      container: false
+    steps:
+      - TASK:
+          name: 1st time in mac
+          script: |
+            ls
+            sl
+            echo lol
   - name: sleep-5m
     type: runSh
     runtime:
