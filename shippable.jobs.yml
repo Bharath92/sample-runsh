@@ -71,7 +71,10 @@ jobs:
           name: 1st time in mac
           script: |
             ls
-            sl
+            export x="abc"
+            echo $x
+            export y='abc"d:e'
+            echo $y
             echo lol
   - name: sleep-5m
     type: runSh
@@ -96,8 +99,10 @@ jobs:
           name: pwd-multi
           script: |
             pwd
-            echo lol
-            sl
+            export x="abc"
+            echo $x
+            export y='abc"d:e'
+            echo $y
             echo lol
       - TASK:
           name: no pull boiz
