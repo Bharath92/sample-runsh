@@ -80,9 +80,9 @@ jobs:
       #    script: 
       #      - exit 0
       - TASK:
-          name: ls
+          name: pwd
           script: 
-            - ls
+            - pwd
       - TASK:
           name: no pull boiz
           script: 
