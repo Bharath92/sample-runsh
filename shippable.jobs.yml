@@ -63,6 +63,8 @@ jobs:
   - name: sleep-5m
     type: runSh
     runtime:
+      architecture: x86_64
+      os: CentOS_7
       container: true
       options:
         pull: false
