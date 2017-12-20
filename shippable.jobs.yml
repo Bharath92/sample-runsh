@@ -106,7 +106,7 @@ jobs:
             container: true
           script: |
             echo line1
-            ls
+            sl
             echo line3
     on_success:
       - script: echo "success :)"
