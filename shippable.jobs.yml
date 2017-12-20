@@ -64,7 +64,7 @@ jobs:
     type: runSh
     runtime:
       architecture: x86_64
-      os: macOS_10.12
+      os: Ubuntu_16.04
       container: false
     steps:
       - TASK:
