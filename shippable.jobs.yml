@@ -85,7 +85,7 @@ jobs:
       options:
         pull: false
     steps:
-      - IN: awsCliConfig
+      - IN: docker-cli-config
       - IN: state
       - OUT: state
       - IN: sample-script-3
