@@ -99,7 +99,7 @@ jobs:
           name: pwd-multi
           script: |
             pwd
-            export x="abc"
+            export x="abdc"
             echo $x
             export y='abc"d:e'
             echo $y
