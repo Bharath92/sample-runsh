@@ -89,9 +89,9 @@ resources:
         api_url: "https://rcapi.shippable.com"    
         default_queue_limit: 1
         queue_limits: '{"job.trigger": 3}'
-  #- name: docker-cli-config
-  #  type: cliConfig
-  #  integration: docker
+  - name: docker-cli-config
+    type: cliConfig
+    integration: docker
   - name: awsCliConfig
     type: cliConfig
     integration: aws-int
