@@ -80,7 +80,7 @@ jobs:
     type: runSh
     runtime:
       architecture: x86_64
-      os: CentOS_7
+      os: Ubuntu_14.04
       container: true
       options:
         pull: false
