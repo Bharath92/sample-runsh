@@ -107,7 +107,7 @@ jobs:
       - TASK:
           name: no pull boiz
           script: 
-            - echo r
+            - printenv
             - shipctl get_resource_version_key state cluster
             - date_now=$(date -Iseconds)
             - shipctl put_resource_state state cluster "$date_now"
