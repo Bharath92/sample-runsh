@@ -97,6 +97,11 @@ resources:
     integration: aws-int
     pointer:
       region: us-east-1
+  - name: oldAwsInt
+    type: cliConfig
+    integration: shipecr
+    pointer:
+      region: us-east-1
   - name: gcr-config
     type: cliConfig
     integration: gcr
