@@ -117,6 +117,9 @@ resources:
   - name: google_cloud_config
     type: cliConfig
     integration: google_cloud
+  - name: old-quay-cli-config
+    type: cliConfig
+    integration: old-quay
   #- name: quay-cli-config
   #  type: cliConfig
   #  integration: quay
