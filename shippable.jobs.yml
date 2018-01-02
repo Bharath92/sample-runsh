@@ -274,7 +274,7 @@ jobs:
   - name: quay-tester
     type: runSh
     steps:
-    - IN: old-quay-cli-config
+    - IN: old-dtr-cli-config
     - TASK:
       - script: docker pull quay.io/revathird/cock1_nod_multiple123
   - name: packer-tester
