@@ -120,6 +120,9 @@ resources:
   - name: old-quay-cli-config
     type: cliConfig
     integration: old-quay
+  - name: old-dtr-cli-config
+    type: cliConfig
+    integration: old-dtr
   #- name: quay-cli-config
   #  type: cliConfig
   #  integration: quay
