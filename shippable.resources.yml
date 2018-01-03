@@ -124,7 +124,7 @@ resources:
     type: cliConfig
     integration: old-dtr
   - name: do_token
-    type:cliConfig
+    type: cliConfig
     integration: do_token
   #- name: quay-cli-config
   #  type: cliConfig
