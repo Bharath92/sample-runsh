@@ -273,6 +273,9 @@ jobs:
       - script: kubectl get namespaces
   - name: quay-tester
     type: runSh
+    runtime:
+      architecture: x86_64
+      os: Ubuntu_14.04
     steps:
     - IN: old-dtr-cli-config
     - TASK:
@@ -290,6 +293,9 @@ jobs:
       - script: popd
   - name: do_token_test
     type: runSh
+    runtime:
+      architecture: x86_64
+      os: Ubuntu_14.04
     steps:
     - IN: do_token
     - TASK:
