@@ -126,6 +126,9 @@ resources:
   - name: do_token
     type: cliConfig
     integration: do_token
+  - name: old-docker
+    type: cliConfig
+    integration: old-docker
   #- name: quay-cli-config
   #  type: cliConfig
   #  integration: quay
