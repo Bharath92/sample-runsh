@@ -303,6 +303,15 @@ jobs:
     - IN: do_token
     - TASK:
       - script: printenv
+  - name: old-docker-test
+    type: runSh
+    runtime:
+      architecture: x86_64
+      os: Ubuntu_16.04
+    steps:
+    - IN: old-docker
+    - TASK:
+      - script: docker pull bharath92/gitissues
   #- name: script-11
   #  type: runCLI
   #  steps:
