@@ -280,7 +280,7 @@ jobs:
       architecture: x86_64
       os: Ubuntu_16.04
     steps:
-    - IN: old-dtr-cli-config
+    - IN: old-quay-cli-config
     - TASK:
       - script: docker pull quay.io/revathird/cock1_nod_multiple123
   - name: packer-tester
