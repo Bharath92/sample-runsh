@@ -215,7 +215,7 @@ jobs:
     steps:
       - IN: state
       - TASK:
-        - script: pip install pyinstaller==3.3.1
+        - script: pip -q install pyinstaller==3.3.1
         
   - name: print-versions
     type: runSh
