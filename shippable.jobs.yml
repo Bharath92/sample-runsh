@@ -209,13 +209,13 @@ jobs:
     
   - name: simple-runsh
     type: runSh
+    runtime:
+      architecture: aarch64
+      os: Ubuntu_16.04
     steps:
       - IN: state
       - TASK:
-        - script: echo hey
-        - script: x=$(shipctl get_resource_meta STATE)
-        - script: cat $x/version.json
-        - script: shipctl get_resource_version_key state cluster
+        - script: echo foo
         
   - name: print-versions
     type: runSh
