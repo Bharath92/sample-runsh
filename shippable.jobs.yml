@@ -303,6 +303,7 @@ jobs:
     steps:
     - IN: old-docker
     - TASK:
+      - script: cat /root/.docker/config.json
       - script: docker pull bharath92/gitissues
   #- name: script-11
   #  type: runCLI
