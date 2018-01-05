@@ -216,10 +216,10 @@ jobs:
     steps:
       - TASK:
         - script: |
-          apt-get install zlib1g-dev
-          pip -v install pyinstaller==3.3.1
-          sl
-          ls
+            apt-get install zlib1g-dev
+            pip -v install pyinstaller==3.3.1
+            sl
+            ls
         
   - name: print-versions
     type: runSh
