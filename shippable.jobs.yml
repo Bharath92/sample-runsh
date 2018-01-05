@@ -215,8 +215,11 @@ jobs:
       container: false
     steps:
       - TASK:
-        - script: apt-get install zlib1g-dev
-        - script: pip -v install pyinstaller==3.3.1
+        - script: |
+          apt-get install zlib1g-dev
+          pip -v install pyinstaller==3.3.1
+          sl
+          ls
         
   - name: print-versions
     type: runSh
