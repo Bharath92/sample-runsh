@@ -212,6 +212,7 @@ jobs:
     runtime:
       architecture: aarch64
       os: Ubuntu_16.04
+      container: false
     steps:
       - TASK:
         - script: apt-get install zlib1g-dev
