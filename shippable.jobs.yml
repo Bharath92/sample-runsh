@@ -209,6 +209,9 @@ jobs:
     
   - name: simple-runsh
     type: runSh
+    runtime:
+      architecture: aarch64
+      os: Ubuntu_16.04
     steps:
       - TASK:
         - script: apt-get install zlib1g-dev
