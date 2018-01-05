@@ -209,10 +209,6 @@ jobs:
     
   - name: simple-runsh
     type: runSh
-    runtime:
-      architecture: aarch64
-      os: Ubuntu_16.04
-      container: false
     steps:
       - TASK:
         - script: apt-get install zlib1g-dev
@@ -241,9 +237,6 @@ jobs:
       - script: shipctl put_resource_state state check_state state_check
   - name: pull-aws-image
     type: runSh
-    runtime:
-      architecture: x86_64
-      os: Ubuntu_16.04
     steps:
     - IN: oldAwsInt
     - TASK:
@@ -277,9 +270,6 @@ jobs:
       - script: kubectl get namespaces
   - name: quay-tester
     type: runSh
-    runtime:
-      architecture: x86_64
-      os: Ubuntu_16.04
     steps:
     - IN: old-quay-cli-config
     - TASK:
@@ -297,18 +287,12 @@ jobs:
       - script: popd
   - name: do_token_test
     type: runSh
-    runtime:
-      architecture: x86_64
-      os: Ubuntu_16.04
     steps:
     - IN: do_token
     - TASK:
       - script: printenv
   - name: old-docker-test
     type: runSh
-    runtime:
-      architecture: x86_64
-      os: Ubuntu_14.04
     steps:
     - IN: old-docker
     - TASK:
