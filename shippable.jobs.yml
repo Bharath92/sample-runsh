@@ -209,6 +209,10 @@ jobs:
     
   - name: simple-runsh
     type: runSh
+    runtime:
+      architecture: x86_64
+      os: Ubuntu_14.04
+      container: false
     steps:
       - TASK:
         - script: sleep 2m
