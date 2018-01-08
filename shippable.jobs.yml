@@ -212,7 +212,7 @@ jobs:
     runtime:
       architecture: x86_64
       os: Ubuntu_14.04
-      container: false
+      container: true
     steps:
       - TASK:
         - script: sleep 2m
