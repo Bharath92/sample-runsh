@@ -224,7 +224,7 @@ jobs:
       container: true
     steps:
       - TASK:
-        - script: sleep 2m
+        - script: sleep 2s
   
   - name: simple-runsh-centos
     type: runSh
@@ -234,7 +234,7 @@ jobs:
       container: true
     steps:
       - TASK:
-        - script: sleep 2m
+        - script: sleep 2s
         
   - name: print-versions
     type: runSh
