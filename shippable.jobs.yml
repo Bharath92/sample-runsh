@@ -247,6 +247,16 @@ jobs:
               imageTag: master
               pull: false
         - script: ls && pwd
+  
+  - name: simple-runsh-macos
+    type: runSh
+    runtime:
+      architecture: x86_64
+      os: macOS_10.12
+      container: true
+    steps:
+      - TASK:
+        - script: ls && pwd
         
   - name: print-versions
     type: runSh
