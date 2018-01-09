@@ -221,20 +221,32 @@ jobs:
     runtime:
       architecture: x86_64
       os: Ubuntu_16.04
-      container: false
+      container: true
     steps:
       - TASK:
-        - script: sl
+        - runtime:
+            container: true
+            options:
+              imageName: drydock/u14
+              imageTag: master
+              pull: false
+        - script: ls
   
   - name: simple-runsh-centos
     type: runSh
     runtime:
       architecture: x86_64
       os: CentOS_7
-      container: false
+      container: true
     steps:
       - TASK:
-        - script: sl
+        - runtime:
+            container: true
+            options:
+              imageName: drydock/u14
+              imageTag: master
+              pull: false
+        - script: ls
         
   - name: print-versions
     type: runSh
