@@ -207,11 +207,30 @@ jobs:
           name: sl
           script: sl
     
-  - name: simple-runsh
+  - name: simple-runsh-U1404
     type: runSh
     runtime:
       architecture: x86_64
       os: Ubuntu_14.04
+      container: true
+    steps:
+      - TASK:
+        - script: sleep 2m
+  - name: simple-runsh-U1604
+    type: runSh
+    runtime:
+      architecture: x86_64
+      os: Ubuntu_16.04
+      container: true
+    steps:
+      - TASK:
+        - script: sleep 2m
+  
+  - name: simple-runsh-centos
+    type: runSh
+    runtime:
+      architecture: x86_64
+      os: CentOS_7
       container: true
     steps:
       - TASK:
