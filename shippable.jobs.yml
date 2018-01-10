@@ -251,8 +251,7 @@ jobs:
   - name: simple-runsh-macos
     type: runSh
     runtime:
-      architecture: x86_64
-      os: macOS_10.12
+      cluster: macCustom
       container: true
     steps:
       - TASK:
