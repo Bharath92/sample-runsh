@@ -252,10 +252,10 @@ jobs:
     type: runSh
     runtime:
       cluster: macCustom
-      container: true
+      container: false
     steps:
       - TASK:
-        - script: ls && pwd
+        - script: sleep 2m
         
   - name: print-versions
     type: runSh
