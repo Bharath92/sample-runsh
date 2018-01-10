@@ -60,6 +60,11 @@ jobs:
   #    - IN: pdr-cli-config
   #    - TASK:
   #      - script: docker pull 174.138.49.87/alpine
+  - name: check_sudo
+    type: runSh
+    steps:
+      - TASK:
+        - script: sudo true
   - name: mac
     type: runSh
     runtime:
