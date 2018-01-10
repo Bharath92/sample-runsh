@@ -255,7 +255,7 @@ jobs:
       container: false
     steps:
       - TASK:
-        - script: sleep 2m
+        - script: sleep 120
         
   - name: print-versions
     type: runSh
