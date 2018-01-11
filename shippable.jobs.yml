@@ -340,6 +340,7 @@ jobs:
     - IN: old-gcl
     - TASK:
       - script: printenv
+      - script: cat $SHIPPABLE_INTEGRATION_ENVS_PATH
   - name: old-docker-test
     type: runSh
     steps:
