@@ -335,6 +335,8 @@ jobs:
       - script: popd
   - name: do_token_test
     type: runSh
+    runtime:
+      cluster: u16custom
     steps:
     - IN: do_token
     - IN: old-gcl
