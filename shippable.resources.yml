@@ -131,7 +131,7 @@ resources:
     integration: old-docker
   - name: old-gcl
     type: cliConfig
-    integration: old-gcl
+    integration: older-gcl
   #- name: quay-cli-config
   #  type: cliConfig
   #  integration: quay
