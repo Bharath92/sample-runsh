@@ -113,7 +113,7 @@ jobs:
           name: no pull boiz
           script: 
             - printenv
-            - shipctl get_resource_version_key state cluster
+            - shipctl get_resource_version_key state 
             - date_now=$(date -Iseconds)
             - shipctl put_resource_state state cluster "$date_now"
             - ls /build || true
@@ -335,6 +335,8 @@ jobs:
       - script: popd
   - name: do_token_test
     type: runSh
+    runtime:
+      cluster: u16custom
     steps:
     - IN: do_token
     - TASK:
