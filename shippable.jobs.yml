@@ -339,6 +339,7 @@ jobs:
       cluster: u16custom
     steps:
     - IN: do_token
+    - IN: old-gcl
     - TASK:
       - script: printenv
   - name: old-docker-test
