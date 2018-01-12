@@ -341,9 +341,9 @@ jobs:
     - IN: gitlab-repo
     - TASK:
       - script: echo foo
-      - script: echo "gitlab" && ls $GITLABREPO_PATH
-      - script: echo "bb" && ls $BBREPO_PATH
-      - script: echo "gh" && ls $SAMPLESCRIPT3_PATH
+      - script: echo "gitlab" && ls $GITLABREPO_PATH/gitRepo
+      - script: echo "bb" && ls $BBREPO_PATH/gitRepo
+      - script: echo "gh" && ls $SAMPLESCRIPT3_PATH/gitRepo
 
 
   - name: old-docker-test
