@@ -341,7 +341,7 @@ jobs:
     - IN: gitlab-repo
     - IN: sample-runsh_master
     - TASK:
-      - script: echo foo
+      - script: printenv
       - script: echo "gitlab" && ls $GITLABREPO_PATH/gitRepo
       - script: echo "bb" && ls $BBREPO_PATH/gitRepo
       - script: echo "gh" && ls $SAMPLESCRIPT3_PATH/gitRepo
