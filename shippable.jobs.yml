@@ -339,6 +339,7 @@ jobs:
     - IN: bb-repo
     - IN: sample-script-3
     - IN: gitlab-repo
+    - IN: sample-runsh_master
     - TASK:
       - script: echo foo
       - script: echo "gitlab" && ls $GITLABREPO_PATH/gitRepo
