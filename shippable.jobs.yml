@@ -336,7 +336,7 @@ jobs:
     runtime:
       cluster: c07custom
     steps:
-    - IN: sample-script
+    - IN: script-1
     - TASK:
       - script: echo foo
   - name: old-docker-test
