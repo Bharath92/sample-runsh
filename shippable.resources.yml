@@ -13,6 +13,12 @@ resources:
     pointer:
       sourceName: bharath92/samplePyt
       branch: master
+  - name: gitlab-reqo
+    type: gitRepo
+    integration: gitlab
+    pointer:
+      sourceName: Bharath92/samplePyt
+      branch: master
   - name: state
     type: state
   #- name: testprivate_gitRepo
