@@ -13,7 +13,7 @@ resources:
     pointer:
       sourceName: bharath92/samplePyt
       branch: master
-  - name: gitlab-reqo
+  - name: gitlab-repo
     type: gitRepo
     integration: gitlab
     pointer:
