@@ -331,16 +331,14 @@ jobs:
       - script: packer validate packer-example.json
       - script: packer build -var "aws_access_key=$aws_access_key" -var "aws_secret_key=$aws_secret_key" packer-example.json
       - script: popd
-  - name: do_token_test
+  - name: simple-runsh-centos7
     type: runSh
     runtime:
-      cluster: u16custom
+      cluster: c07custom
     steps:
-    - IN: do_token
-    - IN: old-gcl
+    - IN: sample-script
     - TASK:
-      - script: printenv
-      - script: cat $SHIPPABLE_INTEGRATION_ENVS_PATH
+      - script: echo foo
   - name: old-docker-test
     type: runSh
     steps:
