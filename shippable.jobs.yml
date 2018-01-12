@@ -336,6 +336,7 @@ jobs:
     runtime:
       cluster: c07custom
     steps:
+    - IN: bb-repo
     - IN: sample-script-3
     - TASK:
       - script: echo foo
