@@ -8,7 +8,7 @@ resources:
       buildOnCommit: true
       buildOnPullRequest: true
   - name: bb-repo
-    name: gitrepo
+    type: gitrepo
     integration: bitbucket
     pointer:
       sourcename: testnoprojectsteams/samplejav
