@@ -7,12 +7,12 @@ resources:
       branch: master
       buildOnCommit: true
       buildOnPullRequest: true
-  - name: bb-repo
-    type: gitRepo
-    integration: bitbucket
-    pointer:
-      sourceName: Bharath92/samplejav
-      branch: master
+  # name: bb-repo
+  #  type: gitRepo
+  #  integration: bitbucket
+  #  pointer:
+  #    sourceName: Bharath92/samplejav
+  #    branch: master
   - name: state
     type: state
   #- name: testprivate_gitRepo
