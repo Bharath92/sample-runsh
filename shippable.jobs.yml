@@ -341,8 +341,11 @@ jobs:
     - IN: gitlab-repo
     - TASK:
       - script: echo foo
-      - script: ls
-      - script: printenv
+      - script: echo "gitlab" && ls $GITLABREPO_PATH
+      - script: echo "bb" && ls $BBREPO_PATH
+      - script: echo "gh" && ls $SAMPLESCRIPT3_PATH
+
+
   - name: old-docker-test
     type: runSh
     steps:
