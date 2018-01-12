@@ -345,6 +345,7 @@ jobs:
       - script: echo "gitlab" && ls $GITLABREPO_PATH/gitRepo
       - script: echo "bb" && ls $BBREPO_PATH/gitRepo
       - script: echo "gh" && ls $SAMPLESCRIPT3_PATH/gitRepo
+      - script: echo "syncrepo" && $SAMPLERUNSHMASTER_PATH/syncRepo
 
 
   - name: old-docker-test
