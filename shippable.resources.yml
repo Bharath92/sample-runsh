@@ -1,6 +1,8 @@
 resources:
-  - name: sample-script-3
+  - name: sample-runsh_master
     type: syncRepo
+  - name: sample-script-3
+    type: gitRepo
     integration: github
     pointer:
       sourceName: Bharath92/sample-script
@@ -8,13 +10,13 @@ resources:
       buildOnCommit: true
       buildOnPullRequest: true
   - name: bb-repo
-    type: syncRepo
+    type: gitRepo
     integration: bitbucket
     pointer:
       sourceName: bharath92/samplePyt
       branch: master
   - name: gitlab-repo
-    type: syncRepo
+    type: gitRepo
     integration: gitlab
     pointer:
       sourceName: Bharath92/samplePyt
