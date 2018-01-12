@@ -7,6 +7,12 @@ resources:
       branch: master
       buildOnCommit: true
       buildOnPullRequest: true
+  - name: bb-repo
+    name: gitrepo
+    integration: bitbucket
+    pointer:
+      sourcename: testnoprojectsteams/samplejav
+      branch: master
   - name: state
     type: state
   #- name: testprivate_gitRepo
