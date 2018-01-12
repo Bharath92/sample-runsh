@@ -11,7 +11,7 @@ resources:
     type: gitRepo
     integration: bitbucket
     pointer:
-      sourcename: testnoprojectsteams/samplejav
+      sourcename: Bharath92/samplejav
       branch: master
   - name: state
     type: state
