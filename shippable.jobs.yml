@@ -338,8 +338,11 @@ jobs:
     steps:
     - IN: bb-repo
     - IN: sample-script-3
+    - IN: gitlab-repo
     - TASK:
       - script: echo foo
+      - script: ls
+      - script: printenv
   - name: old-docker-test
     type: runSh
     steps:
