@@ -215,10 +215,10 @@ jobs:
   - name: simple-runsh-U1404
     type: runSh
     runtime:
-      cluster: u14custom
+      cluster: testu14cluster
     steps:
       - TASK:
-        - script: echo hi
+        - script: printenv
   - name: simple-runsh-U1604
     type: runSh
     runtime:
