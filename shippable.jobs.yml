@@ -237,18 +237,8 @@ jobs:
   
   - name: simple-runsh-centos
     type: runSh
-    runtime:
-      architecture: x86_64
-      os: CentOS_7
-      container: true
     steps:
       - TASK:
-        - runtime:
-            container: true
-            options:
-              imageName: drydock/u14
-              imageTag: master
-              pull: false
         - script: ls && pwd
   
   - name: simple-runsh-macos
