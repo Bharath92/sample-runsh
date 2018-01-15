@@ -222,18 +222,10 @@ jobs:
   - name: simple-runsh-U1604
     type: runSh
     runtime:
-      architecture: x86_64
-      os: Ubuntu_16.04
-      container: true
+      cluster: u16custom
     steps:
       - TASK:
-        - runtime:
-            container: true
-            options:
-              imageName: drydock/u14
-              imageTag: master
-              pull: false
-        - script: ls
+        - script: printenv
   
   - name: simple-runsh-centos
     type: runSh
