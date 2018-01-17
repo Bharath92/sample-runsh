@@ -328,6 +328,11 @@ jobs:
       - script: echo "bb" && ls $BBREPO_PATH/gitRepo
       - script: echo "gh" && ls $SAMPLESCRIPT3_PATH/gitRepo
       - script: echo "syncrepo" && $SAMPLERUNSHMASTER_PATH/syncRepo
+  - name: default_cluster_job
+    type: runSh
+    steps:
+    - TASK:
+      - script: echo "hi :)"
 
 
   - name: old-docker-test
