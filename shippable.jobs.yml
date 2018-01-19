@@ -222,7 +222,7 @@ jobs:
   - name: simple-runsh-U1604
     type: runSh
     runtime:
-      cluster: u16custom
+      nodePool: u16custom
     steps:
       - TASK:
         - script: printenv
