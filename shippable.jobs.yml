@@ -197,6 +197,15 @@ jobs:
         - script: exit 0
     on_success:
       - script: sl
+  - name: incorrect_command_on_success_then_always
+    type: runSh
+    steps:
+      - TASK:
+        - script: exit 0
+    on_success:
+      - script: sl
+    always:
+      - script: echo foo
   - name: exit_0_in_on_success
     type: runSh
     steps:
