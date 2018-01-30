@@ -215,6 +215,15 @@ jobs:
       - script: exit 0
     always:
       - script: echo always
+  - name: exit_1_in_on_success
+    type: runSh
+    steps:
+      - TASK:
+        - script: echo foo
+    on_success:
+      - script: exit 1
+    always:
+      - script: echo always
   - name: testing-stuff
     type: runSh
     runtime:
