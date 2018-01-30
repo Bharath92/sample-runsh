@@ -234,6 +234,16 @@ jobs:
       - script: exit 0
     always:
       - script: echo always
+  - name: return_0_in_on_fail
+    type: runSh
+    steps:
+      - TASK:
+        - script: sl
+    on_failure:
+      - script: sleep 5
+      - script: return 0
+    always:
+      - script: echo always
   - name: testing-stuff
     type: runSh
     runtime:
