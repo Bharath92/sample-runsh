@@ -213,6 +213,8 @@ jobs:
         - script: echo foo
     on_success:
       - script: exit 0
+    always:
+      - script: echo always
   - name: testing-stuff
     type: runSh
     runtime:
