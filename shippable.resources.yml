@@ -146,6 +146,10 @@ resources:
   - name: old-gcl
     type: cliConfig
     integration: older-gcl
+  - name: test-github
+    type: integration
+    integration: test-github
+
   #- name: quay-cli-config
   #  type: cliConfig
   #  integration: quay
