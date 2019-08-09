@@ -195,6 +195,9 @@ jobs:
         - script: docker ps -a
         - script: GITHUB_API_KEY=$(shipctl get_integration_resource_field "test-github" "TOKEN")
         - script: echo $GITHUB_API_KEY
+        - script: echo '{ "foo": "${GITHUB_API_KEY}" }' > test.json
+        - script: shipctl replace test.json
+        - script: cat test.json
   - name: incorrect_command_on_success
     type: runSh
     steps:
