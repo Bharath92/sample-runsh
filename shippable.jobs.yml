@@ -188,10 +188,13 @@ jobs:
   - name: exit-0
     type: runSh
     steps:
+      - IN: test-github
+        switch: off
       - TASK:
         - script: docker images
         - script: docker ps -a
-        - script: exit 0
+        - script: GITHUB_API_KEY=$(shipctl get_integration_resource_field "test-github" "API_KEY")
+        - script: echo $GITHUB_API_KEY
   - name: incorrect_command_on_success
     type: runSh
     steps:
