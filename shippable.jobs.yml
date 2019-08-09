@@ -193,7 +193,7 @@ jobs:
       - TASK:
         - script: docker images
         - script: docker ps -a
-        - script: GITHUB_API_KEY=$(shipctl get_integration_resource_field "test-github" "API_KEY")
+        - script: GITHUB_API_KEY=$(shipctl get_integration_resource_field "test-github" "TOKEN")
         - script: echo $GITHUB_API_KEY
   - name: incorrect_command_on_success
     type: runSh
