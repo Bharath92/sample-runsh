@@ -6,3 +6,4 @@ git add --all
 git commit -m "Updating counter from $initialCounter to $incrementedCounter"
 git push origin master
 
+   
