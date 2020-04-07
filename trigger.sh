@@ -1,3 +1,4 @@
+
 initialCounter=`cat shippable.triggers.yml | grep counter | awk {'print $2'}`
 incrementedCounter=$((initialCounter+1))
 sed "s~$initialCounter~$incrementedCounter~g" shippable.triggers.yml > temp
