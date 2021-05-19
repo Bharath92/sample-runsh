@@ -1,3 +1,3 @@
 From alpine
  
-Run mkdir -p /test && touch test && echo foo > test
+Run touch test && echo foo > test
